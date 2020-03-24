@@ -79,10 +79,14 @@
       <li>Antiterminator/terminator: The antiterminator is a hairpin near the 3’ end of the T-box, containing a bulge with a UGGN sequence that pairs with the NCCA of an uncharged tRNA. The “N” is known as the discriminator base, since it is also recognized by tRNA synthetases. If an uncharged tRNA is not bound, the antiterminator instead adopts the terminator conformation, with the UGGN paired internally.
       </li><br>
     </li></ul>
-  <br>
+  </p>
+  <p class="lead">
   <i>T-box feature prediction</i><br>
   The predictions contained in TBDB were performed using the method found in our Github (need to link). In summary, this method performs feature prediction in two steps. First, the query sequence is passed to INFERNAL, which uses a covariance model (<a href = "http://rfam.xfam.org/family/RF00230/cm">RF00230.cm</a>, obtained from Rfam) to predict secondary structure.
 Second, the secondary structure is searched for motifs including Stem 1, the specifier loop, and the antiterminator. The codon and discriminator are extracted from the position of these motifs. 
+  </p>
+  <p class="lead">
+   <i>Interpretation of results</i><br>
   </p>
   </div>
 
