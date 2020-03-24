@@ -1,108 +1,67 @@
-
-
-
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <script src="https://www.googletagmanager.com/gtag/js?id=UA-112673074-1"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <title>Hello, world!</title>
+  </head>
+
+  
+  <!--For database tables-->
+        <script type="text/javascript" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.20/datatables.min.js"></script>
         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css"/>
         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.20/datatables.min.css"/>
-        <link type="text/css" rel="stylesheet" href="css/style.css"/>
-        <link type="text/css" rel="stylesheet" href="css/style_additional.css"/>
-
-
-        <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.20/datatables.min.js"></script>
-        <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
-        <script type="text/javascript" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
-
-        
-        
         <script type="text/javascript" class="init">
         $(document).ready(function() {
             $('#example').DataTable();
         } );
         </script>
-        
-        
-    </head
-    <body>
+  <!--end database requirement-->
+  
+  
+<body>
     
-    
-    <!--Menu header-->
-    <div>
-            <nav class="navbar navbar-expand-md navbar-dark bg-primary">
-    <div class="container">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Brand -->
-        <a class="navbar-brand" href="/">
-        
-
-
-        <span class="brand-FP">T-Box</span><span class="brand-base"> Database</span>
-        </a>
-        <!-- Links -->
-        
-        <div class="collapse navbar-collapse" id="collapsingNavbar">
-            <ul class="nav navbar-nav navbar-dark ml-auto w-100 justify-content-end flex-column-reverse flex-md-row">
-                <li class="nav-item dropdown ">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">info</a>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="/about/">about T-Box DB</a>
-                        <a class="dropdown-item" href="/help/">help &amp; FAQs</a>
-                        <a class="dropdown-item" href="/cite/">how to cite T-Box DB</a>
-                        <a class="dropdown-item" href="/contributing/">contributing</a>
-                        <a class="dropdown-item" href="/api/">API</a>
-                        <a class="dropdown-item" href="/activity">recent activity</a>
-                        <a class="dropdown-item" href="/problems/">how you can help</a>
-                        <a class="dropdown-item" href="/contact/">contact</a>
-                    </div>
-                </li>
-
-                <li class="nav-item dropdown ">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">tools</a>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="/spectra/">github</a>
-                    </div>
-                </li>
-
-                <li class="nav-item dropdown ">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">explore</a>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                        <h6 class="dropdown-header">SEARCH</h6>
-                        <a class="dropdown-item" href="/search/">advanced search</a>
-                        <h6 class="dropdown-header">BROWSE</h6>
-                        <a class="dropdown-item" href="/table/">protein table</a>
-                        <a class="dropdown-item" href="/chart/">interactive chart</a>
-                        <a class="dropdown-item" href="/lineage/">lineages</a>
-                        <a class="dropdown-item" href="/organisms/">organisms</a>
-                        <a class="dropdown-item" href="/spectra/">spectra</a>
-                        <a class="dropdown-item" href="/references/">references</a>
-                        <h6 class="dropdown-header">SUBMIT</h6>
-                        <a class="dropdown-item" href="/submit/">submit a protein</a>
-                        <a class="dropdown-item" href="/spectra/submit/">submit a spectrum</a>
-                    </div>
-                </li>
-                
-                <form class="form-inline nav-search" method="get" action="/search/">
-                        <div class="input-group">
-                          <span class="algolia-autocomplete" style="position: relative; display: inline-block; direction: ltr;"><input class="form-control aa-hint" type="search" aria-label="Search" autocomplete="off" readonly="" aria-hidden="true" spellcheck="false" tabindex="-1" style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; opacity: 1; background-attachment: scroll; background-clip: border-box; background-color: rgba(255, 255, 255, 0.247059); background-image: none; background-origin: padding-box; background-size: auto; background-position: 0% 0%; background-repeat: repeat repeat;"><input class="form-control aa-input" type="search" placeholder="Search" id="algolia-search-input" name="q" aria-label="Search" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="both" aria-expanded="false" aria-owns="algolia-autocomplete-listbox-0" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-east-asian: normal; font-variant-position: normal; font-weight: 600; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><span class="aa-dropdown-menu" role="listbox" id="algolia-autocomplete-listbox-0" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none; right: auto;"><div class="aa-empty" style="display: none;"></div><div class="aa-dataset-1"></div><div class="aa-dataset-2"></div><div class="aa-dataset-3"></div><div class="aa-dataset-4"></div></span></span>
-                        </div>
-                </form>
-                
-            </ul>
+<!-- Nav bar start-->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top pt-3 mx-auto" >
+  <a class="navbar-brand" href="about.html"><strong>T-Box</strong> Database</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">about</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown01">
+          <a class="dropdown-item" href="about.html">about TBDB</a>
+          <a class="dropdown-item" href="tbox_background.html">tbox background</a>
+          <a class="dropdown-item" href="faq.html">faq</a>
+          <a class="dropdown-item" href="citing.html">how to cite</a>
+          <a class="dropdown-item" href="contact.html">contact</a>
         </div>
-    </div>
-            </nav>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="tbdb.html">database</a>
+      </li>
+      <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">repository</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown01">
+          <a class="dropdown-item" href="https://github.com/jamarchand/tbdb">site</a>
+          <a class="dropdown-item" href="https://github.com/mpiersonsmela/tbox">source code</a>
         </div>
-    <!--Menu header ends -->
-    
-    
-    
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- Nav bar end-->
     
     
     
@@ -4436,4 +4395,3 @@
     
     </body>
 </html>
-
