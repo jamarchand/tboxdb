@@ -30,14 +30,14 @@
       <li class="nav-item dropdown active">
         <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">about</a>
         <div class="dropdown-menu" aria-labelledby="dropdown01">
-          <a class="dropdown-item" href="about.html">about TBDB</a>
-          <a class="dropdown-item" href="tbox_background.html">tbox background</a>
-          <a class="dropdown-item" href="faq.html">faq</a>
-          <a class="dropdown-item" href="citing.html">how to cite</a>
-          <a class="dropdown-item" href="contact.html">contact</a>
+          <a class="dropdown-item" href="#">about TBDB</a>
+          <a class="dropdown-item" href="#">tbox background</a>
+          <a class="dropdown-item" href="#">faq</a>
+          <a class="dropdown-item" href="#">how to cite</a>
+          <a class="dropdown-item" href="#">contact</a>
         </div>
       </li>
-      <li class="nav-item active">
+      <li class="nav-item">
         <a class="nav-link" href="tbdb.html">database</a>
       </li>
       <li class="nav-item dropdown active">
@@ -60,13 +60,30 @@
     
     
     
-    
 <main role="main" class="container">
   <div class="starter-template">
+    <br><br><br>
     <h1>About TBDB:</h1>
     <p class="lead">TBDB is a database of T-boxes and their predicted features.<br><i>What is a T-box?</i><br>A T-box is a leader sequence found in bacterial mRNA that binds a tRNA and senses its aminoacylation state. When an uncharged tRNA is bound, an antiterminator hairpin is formed; otherwise, a terminator hairpin is formed. Downstream genes are therefore transcribed only in the presence of uncharged tRNA.
       <br>
-      For more information, see the <a href = "http://rfam.xfam.org/family/RF00230/">Rfam entry on T-boxes.</a></p>
+      For more information, see the <a href = "http://rfam.xfam.org/family/RF00230/">Rfam entry on T-boxes.</a>
+      <br>
+      <i>T-box structural features</i><br>
+      T-boxes have the following conserved features, listed from 5’ to 3’ end:<br><ul>
+      <li>Stem 1: This is the largest element, and provides most of the affinity for tRNA. It has several loops, and contacts the tRNA at the D/T loops and the anticodon.
+      </li><br>
+      <li>Specifier loop: Within Stem 1, the specifier loop pairs with the anticodon of the cognate tRNA. This helps determine the T-box specificity.
+      </li><br>
+      <li>Stem 2/3: T-boxes often have additional Stem 2 and 3 structures, which are shorter stem-loops. However, these are absent in several families, including glycyl T-boxes. Currently, these features are not included in TBDB.
+      </li><br>
+      <li>Antiterminator/terminator: The antiterminator is a hairpin near the 3’ end of the T-box, containing a bulge with a UGGN sequence that pairs with the NCCA of an uncharged tRNA. The “N” is known as the discriminator base, since it is also recognized by tRNA synthetases. If an uncharged tRNA is not bound, the antiterminator instead adopts the terminator conformation, with the UGGN paired internally.
+      </li><br>
+    </li></ul>
+  <br>
+  <i>T-box feature prediction</i><br>
+  The predictions contained in TBDB were performed using the method found in our Github (need to link). In summary, this method performs feature prediction in two steps. First, the query sequence is passed to INFERNAL, which uses a covariance model (<a href = "http://rfam.xfam.org/family/RF00230/cm">RF00230.cm</a>, obtained from Rfam) to predict secondary structure.
+Second, the secondary structure is searched for motifs including Stem 1, the specifier loop, and the antiterminator. The codon and discriminator are extracted from the position of these motifs. 
+  </p>
   </div>
 
 
