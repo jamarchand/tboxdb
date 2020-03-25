@@ -1,0 +1,1 @@
+$(document).ready(function() {$('#example').DataTable( {data: dataSet,columns: [{ title: "T-Box Locus" },{ title: "Infernal Score" },{ title: "Length" },{ title: "Predicted Specifier" },{ title: "Predicted T-Box region" },{ title: "Putative tRNA Family" },{ title: "Tbdb-id" }]} );} );
