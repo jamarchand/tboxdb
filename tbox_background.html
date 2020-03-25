@@ -64,16 +64,13 @@
 <!-- Nav bar end-->
     
     
-    
-    
-    
 <main role="main" class="container">
   <div class="starter-template">
     <br><br><br>
     <div class="pt-4">
-    <h1>About TBDB:</h1>
+    <h1>What is a T-box?</h1>
     </div>
-    <p class="lead">TBDB is a database of T-boxes and their predicted features.<br><i>What is a T-box?</i><br>A T-box is a leader sequence found in bacterial mRNA that binds a tRNA and senses its aminoacylation state. When an uncharged tRNA is bound, an antiterminator hairpin is formed; otherwise, a terminator hairpin is formed. Downstream genes are therefore transcribed only in the presence of uncharged tRNA.
+    <p class="lead">A T-box is a leader sequence found in bacterial mRNA that binds a tRNA and senses its aminoacylation state. When an uncharged tRNA is bound, an antiterminator hairpin is formed; otherwise, a terminator hairpin is formed. Downstream genes are therefore transcribed only in the presence of uncharged tRNA.
       <br>
       For more information, see the <a href = "http://rfam.xfam.org/family/RF00230/">Rfam entry on T-boxes.</a>
     </p>
@@ -90,27 +87,14 @@
       </li>
     </ul>
   </p>
-  <p class="lead">
-  <i>T-box feature prediction</i><br>
-  The predictions contained in TBDB were performed using the method found in <a href = "https://github.com/mpiersonsmela/tbox"> our Github.</a> In summary, this method performs feature prediction in two steps. First, the query sequence is passed to INFERNAL, which uses a covariance model (<a href = "http://rfam.xfam.org/family/RF00230/cm">RF00230.cm</a>, obtained from Rfam) to predict secondary structure.
-Second, the secondary structure is searched for motifs including Stem 1, the specifier loop, and the antiterminator. The codon and discriminator are extracted from the position of these motifs. 
-  </p>
-  <p class="lead">
-   <i>Accuracy of results</i><br>
-    A test set of 698 T-box sequences (from NEED_REFERENCE) gave the following results:<br>
-   <ul>
-     <li>694 sequences had a T-box detected by INFERNAL</li>
-     <li>619 of these detected T-boxes matched the reference structure closely enough to make a prediction:</li>
-      <ul>
-        <li>555 codons were predicted correctly (90%)</li>
-        <li>22 codons were off by -1 (3.5%)</li>
-        <li>22 codons were off by +1 (3.5%)</li>
-        <li>20 codons were otherwise incorrect (3%)</li>
-     </ul>
-  </ul>
-  So, the predictions can be expected to be roughly 90% accurate, with a top-3 accuracy of 97%.
+  <p class = "lead">
+    <i>Key references:</i><br>
+    <ul>
+      <li>Using covariance models with INFERNAL to detect RNA motifs and predict secondary structure: <a href = "https://doi.org/10.1093/bioinformatics/btt509">Nawrocki and Eddy, 2013</a></li>
+      <li>The Rfam database: <a href = "https://doi.org/10.1002/cpbi.51">Kalvari <i>et al.</i>, 2018</a></li>
+      <li>T-box Stem 1 crystal structure and interactions with tRNA: <a href = "https://doi.org/10.1073/pnas.1222214110">Grigg <i>et al.</i>, 2013</a></li>
+    </ul>
   </p>
   </div>
-
 
 </html>
