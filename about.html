@@ -86,16 +86,28 @@
       <li>Stem 2/3: T-boxes often have additional Stem 2 and 3 structures, which are shorter stem-loops. However, these are absent in several families, including glycyl T-boxes. Currently, these features are not included in TBDB.
       </li><br>
       <li>Antiterminator/terminator: The antiterminator is a hairpin near the 3’ end of the T-box, containing a bulge with a UGGN sequence that pairs with the NCCA of an uncharged tRNA. The “N” is known as the discriminator base, since it is also recognized by tRNA synthetases. If an uncharged tRNA is not bound, the antiterminator instead adopts the terminator conformation, with the UGGN paired internally.
-      </li><br>
-    </li></ul>
+      </li>
+    </ul>
   </p>
   <p class="lead">
   <i>T-box feature prediction</i><br>
-  The predictions contained in TBDB were performed using the method found in our Github (need to link). In summary, this method performs feature prediction in two steps. First, the query sequence is passed to INFERNAL, which uses a covariance model (<a href = "http://rfam.xfam.org/family/RF00230/cm">RF00230.cm</a>, obtained from Rfam) to predict secondary structure.
+  The predictions contained in TBDB were performed using the method found in <a href = "https://github.com/mpiersonsmela/tbox"> our Github.</a> In summary, this method performs feature prediction in two steps. First, the query sequence is passed to INFERNAL, which uses a covariance model (<a href = "http://rfam.xfam.org/family/RF00230/cm">RF00230.cm</a>, obtained from Rfam) to predict secondary structure.
 Second, the secondary structure is searched for motifs including Stem 1, the specifier loop, and the antiterminator. The codon and discriminator are extracted from the position of these motifs. 
   </p>
   <p class="lead">
-   <i>Interpretation of results</i><br>
+   <i>Accuracy of results</i><br>
+    A test set of 698 T-box sequences (from NEED_REFERENCE) gave the following results:<br>
+   <ul>
+     <li>694 sequences had a T-box detected by INFERNAL</li>
+     <li>619 of these detected T-boxes matched the reference structure closely enough to make a prediction:</li>
+      <ul>
+        <li>555 codons were predicted correctly (90%)</li>
+        <li>22 codons were off by -1 (3.5%)</li>
+        <li>22 codons were off by +1 (3.5%)</li>
+        <li>20 codons were otherwise incorrect (3%)</li>
+     </ul>
+  </ul><br>
+  So, the predictions can be expected to be roughly 90% accurate, with a top-3 accuracy of 97%.
   </p>
   </div>
 
