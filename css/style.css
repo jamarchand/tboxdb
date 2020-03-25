@@ -1,5 +1,15 @@
-@charset "UTF-8";
-
 body {
-  font-family: 'Helvetica-Light';
+     font-family: 'Helvetica-Light';
+     font-size: 16px;
+     font-weight: 300;
+     color: #3d455c;
+     margin: 0;
+     padding: 0;
+     overflow-x: hidden;
+}
+
+
+/* this is styling for the search bar in the database table*/
+#example_filter input {
+        border-radius: 20px;
 }
