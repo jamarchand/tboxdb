@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <title>About the T-Box Database</title>
+    
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+
+  </head>
+
+
+  
+<body>
+<!-- Nav bar start-->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top pt-3 mx-auto pr-5 pl-5" >
+<div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+  <ul class="navbar-nav ml-auto pr-5">
+      <a class="navbar-brand" href="about.html"><strong>T-Box</strong> Database</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">about</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown01">
+          <a class="dropdown-item" href="about.html">about TBDB</a>
+          <a class="dropdown-item" href="tbox_background.html">tbox background</a>
+          <a class="dropdown-item" href="faq.html">faq</a>
+          <a class="dropdown-item" href="citing.html">how to cite</a>
+          <a class="dropdown-item" href="contact.html">contact</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">database</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown01">
+          <a class="dropdown-item" href="tbdb.html">browse</a>
+          <a class="dropdown-item" href="tbox_database_download.csv">download tdbd</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">repository</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown01">
+          <a class="dropdown-item" href="https://github.com/jamarchand/tboxdb">site</a>
+          <a class="dropdown-item" href="https://github.com/mpiersonsmela/tbox">source code</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</ul>
+</div>
+</nav>
+<!-- Nav bar end-->
+    
+    
+    
+    
+    
+<main role="main" class="container">
+  <div class="starter-template">
+    <br><br><br>
+    <div class="pt-4">
+    <h1>About TBDB:</h1>
+    </div>
+    <p class="lead">TBDB is a database of T-boxes and their predicted features.<br><i>What is a T-box?</i><br>A T-box is a leader sequence found in bacterial mRNA that binds a tRNA and senses its aminoacylation state. When an uncharged tRNA is bound, an antiterminator hairpin is formed; otherwise, a terminator hairpin is formed. Downstream genes are therefore transcribed only in the presence of uncharged tRNA.
+      <br>
+      For more information, see the <a href = "http://rfam.xfam.org/family/RF00230/">Rfam entry on T-boxes.</a>
+    </p>
+    <p class="lead">
+      <i>T-box structural features</i><br>
+      T-boxes have the following conserved features, listed from 5’ to 3’ end:<br><ul>
+      <li>Stem 1: This is the largest element, and provides most of the affinity for tRNA. It has several loops, and contacts the tRNA at the D/T loops and the anticodon.
+      </li><br>
+      <li>Specifier loop: Within Stem 1, the specifier loop pairs with the anticodon of the cognate tRNA. This helps determine the T-box specificity.
+      </li><br>
+      <li>Stem 2/3: T-boxes often have additional Stem 2 and 3 structures, which are shorter stem-loops. However, these are absent in several families, including glycyl T-boxes. Currently, these features are not included in TBDB.
+      </li><br>
+      <li>Antiterminator/terminator: The antiterminator is a hairpin near the 3’ end of the T-box, containing a bulge with a UGGN sequence that pairs with the NCCA of an uncharged tRNA. The “N” is known as the discriminator base, since it is also recognized by tRNA synthetases. If an uncharged tRNA is not bound, the antiterminator instead adopts the terminator conformation, with the UGGN paired internally.
+      </li>
+    </ul>
+  </p>
+  <p class="lead">
+  <i>T-box feature prediction</i><br>
+  The predictions contained in TBDB were performed using the method found in <a href = "https://github.com/mpiersonsmela/tbox"> our Github.</a> In summary, this method performs feature prediction in two steps. First, the query sequence is passed to INFERNAL, which uses a covariance model (<a href = "http://rfam.xfam.org/family/RF00230/cm">RF00230.cm</a>, obtained from Rfam) to predict secondary structure.
+Second, the secondary structure is searched for motifs including Stem 1, the specifier loop, and the antiterminator. The codon and discriminator are extracted from the position of these motifs. 
+  </p>
+  <p class="lead">
+   <i>Accuracy of results</i><br>
+    A test set of 698 T-box sequences (from NEED_REFERENCE) gave the following results:<br>
+   <ul>
+     <li>694 sequences had a T-box detected by INFERNAL</li>
+     <li>619 of these detected T-boxes matched the reference structure closely enough to make a prediction:</li>
+      <ul>
+        <li>555 codons were predicted correctly (90%)</li>
+        <li>22 codons were off by -1 (3.5%)</li>
+        <li>22 codons were off by +1 (3.5%)</li>
+        <li>20 codons were otherwise incorrect (3%)</li>
+     </ul>
+  </ul>
+  So, the predictions can be expected to be roughly 90% accurate, with a top-3 accuracy of 97%.
+  </p>
+  </div>
+
+
+</html>
