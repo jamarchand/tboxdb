@@ -69,20 +69,21 @@
     <div class="pt-4">
     <h1>About TBDB:</h1>
     </div>
-    <p class="lead">TBDB is a database of T-boxes and their predicted features.<br>
+    <p class="lead">TBDB is a database of T-boxes and their predicted features.</p>
       <h3>Data sources</h3>
+    <p class="lead">
       <ul>
         <li><a href = "https://rfam.xfam.org/family/RF00230">The Rfam database</a> (12313 T-boxes, predicted using INFERNAL)</li>
         <li><a href = "https://dx.doi.org/10.1261/rna.819308">Vitreschak <i>et al.</i>, 2008</a> (698 T-boxes, manually curated)</li>
     </ul>
   </p>
-  <p class="lead">
   <h3>T-box feature prediction</h3>
+  <p class="lead">
   The predictions contained in TBDB were performed using the method found in <a href = "https://github.com/mpiersonsmela/tbox"> our Github.</a> In summary, this method performs feature prediction in two steps. First, the query sequence is passed to INFERNAL, which uses a covariance model (<a href = "http://rfam.xfam.org/family/RF00230/cm">RF00230.cm</a>, obtained from Rfam) to predict secondary structure.
 Second, the secondary structure is searched for motifs including Stem 1, the specifier loop, and the antiterminator. The codon and discriminator are extracted from the position of these motifs. 
   </p>
+  <h3>Accuracy of results</h3>
   <p class="lead">
-   <h3>Accuracy of results</h3>
     A test set of 698 T-box sequences (from <a href = "https://dx.doi.org/10.1261/rna.819308">Vitreschak <i>et al.</i>, 2008</a>) gave the following results:<br>
    <ul>
      <li>694 sequences had a T-box detected by INFERNAL</li>
