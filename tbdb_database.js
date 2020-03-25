@@ -1,0 +1,1 @@
+var dataSet = [["TboxID=BC_YOCR2", "1.1e-32", "UUC", "UGGU"],["TboxID=SA_METI", "2.4999999999999997e-32", "AUG", "UGGU"],["TboxID=DRE_leuX", "6.5e-31", "CUC", "UGGU"],["TboxID=SA_VALS", "8.6e-31", "GUA", "UGGU"],];
