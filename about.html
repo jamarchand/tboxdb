@@ -63,31 +63,17 @@
 </nav>
 <!-- Nav bar end-->
     
-    
-    
-    
-    
 <main role="main" class="container">
   <div class="starter-template">
     <br><br><br>
     <div class="pt-4">
     <h1>About TBDB:</h1>
     </div>
-    <p class="lead">TBDB is a database of T-boxes and their predicted features.<br><i>What is a T-box?</i><br>A T-box is a leader sequence found in bacterial mRNA that binds a tRNA and senses its aminoacylation state. When an uncharged tRNA is bound, an antiterminator hairpin is formed; otherwise, a terminator hairpin is formed. Downstream genes are therefore transcribed only in the presence of uncharged tRNA.
-      <br>
-      For more information, see the <a href = "http://rfam.xfam.org/family/RF00230/">Rfam entry on T-boxes.</a>
-    </p>
-    <p class="lead">
-      <i>T-box structural features</i><br>
-      T-boxes have the following conserved features, listed from 5’ to 3’ end:<br><ul>
-      <li>Stem 1: This is the largest element, and provides most of the affinity for tRNA. It has several loops, and contacts the tRNA at the D/T loops and the anticodon.
-      </li><br>
-      <li>Specifier loop: Within Stem 1, the specifier loop pairs with the anticodon of the cognate tRNA. This helps determine the T-box specificity.
-      </li><br>
-      <li>Stem 2/3: T-boxes often have additional Stem 2 and 3 structures, which are shorter stem-loops. However, these are absent in several families, including glycyl T-boxes. Currently, these features are not included in TBDB.
-      </li><br>
-      <li>Antiterminator/terminator: The antiterminator is a hairpin near the 3’ end of the T-box, containing a bulge with a UGGN sequence that pairs with the NCCA of an uncharged tRNA. The “N” is known as the discriminator base, since it is also recognized by tRNA synthetases. If an uncharged tRNA is not bound, the antiterminator instead adopts the terminator conformation, with the UGGN paired internally.
-      </li>
+    <p class="lead">TBDB is a database of T-boxes and their predicted features.<br>
+      <i>Data sources:</i><br>
+      <ul>
+        <li><a href = "https://rfam.xfam.org/family/RF00230">The Rfam database</a></li>
+        <li><a href = "https://dx.doi.org/10.1261/rna.819308">Vitreschak <i>et al.</i>, 2008</a> </li>
     </ul>
   </p>
   <p class="lead">
@@ -97,7 +83,7 @@ Second, the secondary structure is searched for motifs including Stem 1, the spe
   </p>
   <p class="lead">
    <i>Accuracy of results</i><br>
-    A test set of 698 T-box sequences (from NEED_REFERENCE) gave the following results:<br>
+    A test set of 698 T-box sequences (from <a href = "https://dx.doi.org/10.1261/rna.819308">Vitreschak <i>et al.</i>, 2008</a>) gave the following results:<br>
    <ul>
      <li>694 sequences had a T-box detected by INFERNAL</li>
      <li>619 of these detected T-boxes matched the reference structure closely enough to make a prediction:</li>
