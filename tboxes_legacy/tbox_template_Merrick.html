@@ -198,7 +198,7 @@
             btn_term.onclick = function() {
                 /* This changes the button's label */
                 btn.innerHTML = 'You clicked me!';
-               $("#Antiterminator").remove("show"); /*test collapsing*/
+               $("#Antiterminator").classList.remove("show"); /*test collapsing*/
                $("#Terminator").toggle("show"); 
             };
               
@@ -206,7 +206,7 @@
                 /* This changes the button's label */
                 btn.innerHTML = 'You clicked me!';
                $("#Antiterminator").toggle("show");  /*test collapsing*/
-               $("#Terminator").remove("show");
+               $("#Terminator").classList.remove("show");
             };
     	</script>
             
