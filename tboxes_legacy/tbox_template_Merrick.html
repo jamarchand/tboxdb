@@ -198,15 +198,15 @@
             btn_term.onclick = function() {
                 /* This changes the button's label */
                 btn.innerHTML = 'You clicked me!';
-               $("#Antiterminator").classList.remove("show"); /*test collapsing*/
-               $("#Terminator").classList.toggle("show"); 
+               document.getElementById("Antiterminator").classList.remove("show"); /*test collapsing*/
+               document.getElementById("Terminator").classList.toggle("show"); 
             };
               
             btn_antiterm.onclick = function() {
                 /* This changes the button's label */
                 btn.innerHTML = 'You clicked me!';
-               $("#Antiterminator").classList.toggle("show");  /*test collapsing*/
-               $("#Terminator").classList.remove("show");
+               document.getElementById("Antiterminator").classList.toggle("show");  /*test collapsing*/
+               document.getElementById("Terminator").classList.remove("show");
             };
     	</script>
             
