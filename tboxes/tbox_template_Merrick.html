@@ -181,8 +181,8 @@
 
         <script>
           function toggleMenu(){
-           $("#Antiterminator").collapse()
-           $("#Terminator").collapse.show() 
+           $("#Antiterminator").collapse('hide')
+           $("#Terminator").collapse('show') 
           }
           
           
@@ -193,8 +193,8 @@
             btn.onclick = function() {
                 /* This changes the button's label */
                 btn.innerHTML = 'You clicked me!';
-               $("#Antiterminator").collapse() /*test collapsing*/
-               $("#Terminator").collapse.show() 
+               $("#Antiterminator").collapse('hide') /*test collapsing*/
+               $("#Terminator").collapse('show') 
             };
     	</script>
             
