@@ -198,15 +198,15 @@
             btn_term.onclick = function() {
                 /* This changes the button's label */
                 btn.innerHTML = 'You clicked me!';
-               $("#Antiterminator").collapse('hide'); /*test collapsing*/
-               $("#Terminator").collapse('show'); 
+               $("#Antiterminator").collapse({hide: true, animate: false}); /*test collapsing*/
+               $("#Terminator").collapse({toggle: true, animate: false}); 
             };
               
             btn_antiterm.onclick = function() {
                 /* This changes the button's label */
                 btn.innerHTML = 'You clicked me!';
-               $("#Antiterminator").collapse('show'); /*test collapsing*/
-               $("#Terminator").collapse('hide'); 
+               $("#Antiterminator").collapse({toggle: true, animate: false}); /*test collapsing*/
+               $("#Terminator").collapse({hide: true, animate: false}); 
             };
     	</script>
             
