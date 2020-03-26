@@ -152,10 +152,10 @@
             <div class="card card-body bg-light">
                 
                  <p>
-                  <a class="btn btn-primary" data-toggle="collapse" data-target=".collapse" role="button" aria-expanded="false" aria-controls="collapseExample">
+                  <a class="btn btn-primary" id = "btn_antiterm" role="button" aria-expanded="false" aria-controls="collapseExample">
                     Anti-terminator
                   </a>
-                  <a class="btn btn-primary" data-toggle="collapse" data-target=".collapse" role="button" aria-expanded="false" aria-controls="collapseExample">
+                  <a class="btn btn-primary" id = "btn_term" role="button" aria-expanded="false" aria-controls="collapseExample">
                     Terminator
                   </a>
                 </p>
@@ -190,11 +190,19 @@
             var btn = document.getElementById('buttonId');
             
             /* This sets the action to perform on a click event */
-            btn.onclick = function() {
+            $("#btn_term").onclick = function() {
                 /* This changes the button's label */
                 btn.innerHTML = 'You clicked me!';
                $("#Antiterminator").collapse('hide') /*test collapsing*/
                $("#Terminator").collapse('show') 
+              
+              
+              
+               $("#btn_antiterm").onclick = function() {
+                /* This changes the button's label */
+                btn.innerHTML = 'You clicked me!';
+               $("#Antiterminator").collapse('show') /*test collapsing*/
+               $("#Terminator").collapse('hide') 
             };
     	</script>
             
