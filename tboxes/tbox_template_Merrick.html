@@ -177,15 +177,18 @@
         
          <!---javascript test-->
         
-        <button id = "testButton">this is a button</button>
+        <button id="buttonId" class="buttonClass">I am a button!</button>
 
-         <script type="text/javascript">
+        <script>
+            /* This assigns the element with id 'buttonId' to 'btn' */
+            var btn = document.getElementById('buttonId');
+            
             /* This sets the action to perform on a click event */
-            document.getElementById('testButton').onclick = function() {
+            btn.onclick = function() {
                 /* This changes the button's label */
                 btn.innerHTML = 'You clicked me!';
             };
-         </script>
+    	</script>
             
             
             
