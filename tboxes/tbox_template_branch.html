@@ -133,13 +133,12 @@
             <div class="card card-body bg-light">
                 
                  <p>
-
-                  <a class="btn btn-secondary btn-secondary" data-toggle="collapse" href="#Antiterminator" role="button" aria-expanded="false" aria-controls="collapseExample">
+                  <button class="btn btn-primary" id="btn_antiterm" aria-expanded="false" aria-controls="collapseExample">
                     Anti-terminator
-                  </a>
-                  <a class="btn btn-secondary" data-toggle="collapse" href="#Terminator" role="button" aria-expanded="false" aria-controls="collapseExample">
+                  </button>
+                  <button class="btn btn-primary" id="btn_term" role="button" aria-expanded="false" aria-controls="collapseExample">
                     Terminator
-                  </a>
+                  </button>
                 </p>
                 
                 <div class="collapse" id="Antiterminator">
@@ -157,7 +156,24 @@
             </div>
         </div>
         
-        
+        <!---javascript-->
+
+        <script>            
+            var btn_term = document.getElementById('btn_term');
+            var btn_antiterm = document.getElementById('btn_antiterm');
+            
+            
+            /* This sets the action to perform on a click event */
+            btn_term.onclick = function() {
+               $("#Antiterminator").collapse('hide');
+               $("#Terminator").collapse('show'); 
+            };
+              
+            btn_antiterm.onclick = function() {
+               $("#Antiterminator").collapse('show');
+               $("#Terminator").collapse('hide'); 
+            };
+    	</script>
             
         <!---Fold representation-->
         <div class="col-md-12 pt-3 pb-2">
