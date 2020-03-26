@@ -166,11 +166,11 @@
             /* This sets the action to perform on a click event */
             btn_term.onclick = function() {
                $("#Antiterminator").collapse('hide');
-               $("#Terminator").collapse('show'); 
+               $("#Terminator").collapse('toggle'); 
             };
               
             btn_antiterm.onclick = function() {
-               $("#Antiterminator").collapse('show');
+               $("#Antiterminator").collapse('toggle');
                $("#Terminator").collapse('hide'); 
             };
     	</script>
