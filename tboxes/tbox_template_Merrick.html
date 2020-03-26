@@ -181,7 +181,7 @@
 
         <script>
             /* This assigns the element with id 'buttonId' to 'btn' */
-            var btn = document.getElementById('buttonId');
+            var btn = $("#buttonID");
             
             var btn_term = $("#btn_term");
             var btn_antiterm = $("#btn_antiterm");
@@ -197,14 +197,14 @@
             /* This sets the action to perform on a click event */
             btn_term.onclick = function() {
                 /* This changes the button's label */
-                btn_term.innerHTML = 'You clicked me!';
+                btn.innerHTML = 'You clicked me!';
                $("#Antiterminator").collapse('hide'); /*test collapsing*/
                $("#Terminator").collapse('show'); 
             };
               
             btn_antiterm.onclick = function() {
                 /* This changes the button's label */
-                btn_antiterm.innerHTML = 'You clicked me!';
+                btn.innerHTML = 'You clicked me!';
                $("#Antiterminator").collapse('show'); /*test collapsing*/
                $("#Terminator").collapse('hide'); 
             };
