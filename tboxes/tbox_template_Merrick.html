@@ -180,6 +180,12 @@
         <button id="buttonId" class="buttonClass">I am a button!</button>
 
         <script>
+          function toggleMenu(){
+           $("#Antiterminator").collapse()
+           $("#Terminator").collapse.show() 
+          }
+          
+          
             /* This assigns the element with id 'buttonId' to 'btn' */
             var btn = document.getElementById('buttonId');
             
@@ -187,6 +193,8 @@
             btn.onclick = function() {
                 /* This changes the button's label */
                 btn.innerHTML = 'You clicked me!';
+               $("#Antiterminator").collapse() /*test collapsing*/
+               $("#Terminator").collapse.show() 
             };
     	</script>
             
