@@ -86,13 +86,10 @@
          
          
 
-
-        <div class="col-md-10 pt-2 pb-5">
+        <!---SOURCE INFORMATION-->
+        <div class="col-md-12 pt-2 pb-1">
                 <h3 style="font-family:Helvetica Neue; font-size:22px">
                     Source information</h3>
-                
-                
-                
         <div class="card card-body bg-light">
                 <table class="table" style="font-size:18px; padding:1pt">
                         <tbody>
@@ -110,28 +107,76 @@
                             <tr><td>Predicted discriminator base</td><td>A</td></td></tr>
                             <tr><td>Predicted tRNA family</td><td>Met (CAU)</td></td></tr>
                             <tr><td>Source</td><td><a href="http://rfam.xfam.org/family/RF00230">RFAM00230</a></td></td></tr>
-
                         </tbody>
                     </table>
+            </div>
         </div>
         
-        <h3 class="pt-5" style="font-family:Helvetica Neue; font-size:22px">
-        FASTA Sequence</h3>
-        <div class="card card-body bg-light" style="font-family: Courier">
-        >T-Box 00X2S (Full)
-        <br> AAAATTTCGTTGATGAGGAAAGTAAGTTTGGCGTACATTTTAGAGAGACACTGGTTGGTGAAAAGTGTTATGGACAAAAAGCTGAAAATGGCCTAAGAGAAAAAGTTTGCCGATAAGTAGGCAGCTTCGGATGTTTCACCGTTAAAAGAAGCACCAATCTTTATGATAAATTTCATAAACGTTGGATAGAGGAAAGCAATTGCTTTTGAACTAAGGTGGTAACACGATTATTCGTCCTTTTA
-        </div>
         
+        
+        <!---FASTA SEQUENCE-->
+        <div class="col-md-12 pt-2 pb-2">
+            <h3 style="font-family:Helvetica Neue; font-size:22px">FASTA Sequence</h3>
+            <div class="card card-body bg-light" style="font-family: Courier">
+            >T-Box 00X2S (Full)
+            <br> AAAATTTCGTTGATGAGGAAAGTAAGTTTGGCGTACATTTTAGAGAGACACTGGTTGGTGAAAAGTGTTATGGACAAAAAGCTGAAAATGGCCTAAGAGAAAAAGTTTGCCGATAAGTAGGCAGCTTCGGATGTTTCACCGTTAAAAGAAGCACCAATCTTTATGATAAATTTCATAAACGTTGGATAGAGGAAAGCAATTGCTTTTGAACTAAGGTGGTAACACGATTATTCGTCCTTTTA
+            </div>
+        </div>
             
-            <div class="col-md-12 pt-5 pb-5">
-                  <h3 style="font-family:Helvetica Neue; font-size:22px">
-                      Predicted secondary structure (anti-terminator)</h3>
-                  <div class="row">
-                      <div class="col-md-12">
-                          <img alt="Bootstrap Image Preview" style="width:80%" src="../tbox_images/tbox_image2.png" />
-                      </div>
+            
+        <!---Fold representation-->
+        <div class="col-md-12 pt-2 pb-2">
+            <h3 style="font-family:Helvetica Neue; font-size:22px">Fold dot-bracket representation</h3>
+                <div class="card card-body bg-light" style="font-family: Courier">
+
+                    <div class="card card-body bg-light" style="font-family: Courier">
+                        Card 1</br>
+                        AAAATTTCGTTGATGAGGAAAGTAAGTTTGGCGTACATTTTAGAGAGACACTGGTTGGTGAAAAGTGTTATGGACAAAAAGCTGAAAATGGCCTAAGAGAAAAAGTTTGCCGATAAGTAGGCAGCTTCGGATGTTTCACCGTTAAAAGAAGCACCAATCTTTATGATAAATTTCATAAACGTTGGATAGAGGAAAGCAATTGCTTTTGAACTAAGGTGGTAACACGATTATTCGTCCTTTTA
+                    </div>
+                    <div class="card card-body bg-light" style="font-family: Courier">
+                        Card 2</br>
+                        AAAATTTCGTTGATGAGGAAAGTAAGTTTGGCGTACATTTTAGAGAGACACTGGTTGGTGAAAAGTGTTATGGACAAAAAGCTGAAAATGGCCTAAGAGAAAAAGTTTGCCGATAAGTAGGCAGCTTCGGATGTTTCACCGTTAAAAGAAGCACCAATCTTTATGATAAATTTCATAAACGTTGGATAGAGGAAAGCAATTGCTTTTGAACTAAGGTGGTAACACGATTATTCGTCCTTTTA
+                    </div>
+                    <div class="card card-body bg-light" style="font-family: Courier">
+                        Card 3</br>
+                        AAAATTTCGTTGATGAGGAAAGTAAGTTTGGCGTACATTTTAGAGAGACACTGGTTGGTGAAAAGTGTTATGGACAAAAAGCTGAAAATGGCCTAAGAGAAAAAGTTTGCCGATAAGTAGGCAGCTTCGGATGTTTCACCGTTAAAAGAAGCACCAATCTTTATGATAAATTTCATAAACGTTGGATAGAGGAAAGCAATTGCTTTTGAACTAAGGTGGTAACACGATTATTCGTCCTTTTA
+                    </div>
+                </div>
+        </div>
+            
+            
+            
+        <!---FASTA SEQUENCE-->
+        <div class="col-md-12 pt-2 pb-2">
+            <h3 style="font-family:Helvetica Neue; font-size:22px"> Predicted secondary structures </h3>
+            <div class="card card-body bg-light">
+                
+                 <p>
+                  <a class="btn btn-primary" data-toggle="collapse" data-target=".collapse" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    Anti-terminator
+                  </a>
+                  <a class="btn btn-primary" data-toggle="collapse" data-target=".collapse" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    Terminator
+                  </a>
+                </p>
+                
+                <div class="collapse show" id="Antiterminator">
+                  <div class="card card-body">
+                        <img alt="Bootstrap Image Preview" style="width:80%" src="../tbox_images/tbox_image2.png" />
                   </div>
-              </div>
+                </div>
+                
+                <div class="collapse" id="Terminator">
+                  <div class="card card-body">
+                        <img alt="Bootstrap Image Preview" style="width:80%" src="../tbox_images/tbox_image.png" />
+                  </div>
+                </div>
+
+            </div>
+        </div>
+        
+        
+
             
             
             
@@ -157,18 +202,12 @@
                   <br> CTTTATGATAAATTTCATAAACGTTGGATAGAGGAAAGCAATTGCTTT
               </div>
               
-              <br>
-              <div class="card bg-light">
-                <div class="card-header"><h4>Fold representation</h4></div>
-                <div class="card-title">Antiterminator fold</div>
-              <div class="card-body" style="font-family: Courier; word-break: break-all">
-                  ::::::&lt;&lt;------&lt;&lt;&lt;&lt;-------&lt;&lt;&lt;&lt;&lt;&lt;-------&lt;&lt;&lt;--------&lt;&lt;&lt;&lt;&lt;&lt;___________&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;-----&gt;&gt;&gt;&gt;&gt;&gt;--------&gt;&gt;&gt;&gt;---&gt;&gt;...,&lt;&lt;&lt;&lt;&lt;&lt;&lt;_____________&gt;&gt;&gt;&gt;&gt;&gt;&gt;,&lt;&lt;&lt;____..__&gt;&gt;&gt;,,,,...............................,,,,,,,,,,,,,,,&lt;&lt;&lt;&lt;&lt;&lt;&lt;________&gt;&gt;&gt;&gt;&gt;&gt;&gt;.,,,,&lt;&lt;&lt;&lt;-------&lt;&lt;&lt;&lt;&lt;______&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;:::
+              
+              <div class="card card-body bg-light" style="font-family: Courier; word-break: break-all">
+                 T-Box 00X2S (Fold representation)
+                  <br> ::::::&lt;&lt;------&lt;&lt;&lt;&lt;-------&lt;&lt;&lt;&lt;&lt;&lt;-------&lt;&lt;&lt;--------&lt;&lt;&lt;&lt;&lt;&lt;___________&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;-----&gt;&gt;&gt;&gt;&gt;&gt;--------&gt;&gt;&gt;&gt;---&gt;&gt;...,&lt;&lt;&lt;&lt;&lt;&lt;&lt;_____________&gt;&gt;&gt;&gt;&gt;&gt;&gt;,&lt;&lt;&lt;____..__&gt;&gt;&gt;,,,,...............................,,,,,,,,,,,,,,,&lt;&lt;&lt;&lt;&lt;&lt;&lt;________&gt;&gt;&gt;&gt;&gt;&gt;&gt;.,,,,&lt;&lt;&lt;&lt;-------&lt;&lt;&lt;&lt;&lt;______&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;:::
               </div>
-              <div class="card-title">Terminator fold</div>
-              <div class="card-body" style="font-family: Courier; word-break: break-all">
-                  ::::::&lt;&lt;------&lt;&lt;&lt;&lt;-------&lt;&lt;&lt;&lt;&lt;&lt;-------&lt;&lt;&lt;--------&lt;&lt;&lt;&lt;&lt;&lt;___________&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;-----&gt;&gt;&gt;&gt;&gt;&gt;--------&gt;&gt;&gt;&gt;---&gt;&gt;...,&lt;&lt;&lt;&lt;&lt;&lt;&lt;_____________&gt;&gt;&gt;&gt;&gt;&gt;&gt;,&lt;&lt;&lt;____..__&gt;&gt;&gt;,,,,...............................,,,,,,,,,,,,,,,&lt;&lt;&lt;&lt;&lt;&lt;&lt;________&gt;&gt;&gt;&gt;&gt;&gt;&gt;.,,,,&lt;&lt;&lt;&lt;-------&lt;&lt;&lt;&lt;&lt;______&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;:::
-              </div>
-            </div>
+              
 
               
               
@@ -189,6 +228,9 @@
                          <h3 style="font-family:Helvetica Neue; font-size:22px">
                              Thermodyanmic parameters</h3>
             <div class="row">
+                
+                
+                
                 
 
             </div>
