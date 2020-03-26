@@ -128,23 +128,7 @@
         
         
         
-        <!---javascript-->
-        <script>
-            var btn_term = document.getElementById('btn_term');
-            var btn_antiterm = document.getElementById('btn_antiterm');
-            
-            
-            /* This sets the action to perform on a click event */
-            btn_term.onclick = function() {
-               $("#Antiterminator").collapse('hide');
-               $("#Terminator").collapse('toggle');
-            };
-              
-            btn_antiterm.onclick = function() {
-               $("#Antiterminator").collapse('toggle');
-               $("#Terminator").collapse('hide');
-            };
-        </script>
+
         
         
         <!---Secondary structure predictions-->
@@ -177,6 +161,24 @@
           </div>
         
         
+        
+        <!---javascript-->
+        <script>
+            var btn_term = document.getElementById('btn_term');
+            var btn_antiterm = document.getElementById('btn_antiterm');
+            
+            
+            /* This sets the action to perform on a click event */
+            btn_term.onclick = function() {
+               $("#Antiterminator").collapse('hide');
+               $("#Terminator").collapse('toggle');
+            };
+              
+            btn_antiterm.onclick = function() {
+               $("#Antiterminator").collapse('toggle');
+               $("#Terminator").collapse('hide');
+            };
+        </script>
             
         <!---Fold representation-->
         <div class="col-md-12 pt-3 pb-2">
