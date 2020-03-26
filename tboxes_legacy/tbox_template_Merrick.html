@@ -160,13 +160,13 @@
                   </button>
                 </p>
                 
-                <div class="show" id="Antiterminator">
+                <div class="collapse show" id="Antiterminator">
                   <div class="card card-body">
                         <img alt="Bootstrap Image Preview" style="width:80%" src="../tbox_images/tbox_image2.png" />
                   </div>
                 </div>
                 
-                <div class="show" id="Terminator">
+                <div class="collapse" id="Terminator">
                   <div class="card card-body">
                         <img alt="Bootstrap Image Preview" style="width:80%" src="../tbox_images/tbox_image.png" />
                   </div>
@@ -190,7 +190,7 @@
             btn.onclick = function() {
                 /* This changes the button's label */
                 btn.innerHTML = 'You clicked me!';
-               $("#Antiterminator").collapse('hide'); /*test collapsing*/
+               $("#Antiterminator").toggle("show"); /*test collapsing*/
                $("#Terminator").collapse('show'); 
             };
             
@@ -198,15 +198,15 @@
             btn_term.onclick = function() {
                 /* This changes the button's label */
                 btn.innerHTML = 'You clicked me!';
-               document.getElementById("Antiterminator").classList.remove("show"); /*test collapsing*/
-               document.getElementById("Terminator").classList.toggle("show"); 
+               $("#Antiterminator").style.display("none"); /*test collapsing*/
+               $("#Terminator").toggle("show"); 
             };
               
             btn_antiterm.onclick = function() {
                 /* This changes the button's label */
                 btn.innerHTML = 'You clicked me!';
-               document.getElementById("Antiterminator").classList.toggle("show");  /*test collapsing*/
-               document.getElementById("Terminator").classList.remove("show");
+               $("#Antiterminator").toggle("show");  /*test collapsing*/
+               $("#Terminator").style.display("none");
             };
     	</script>
             
