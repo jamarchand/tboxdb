@@ -160,13 +160,13 @@
                   </button>
                 </p>
                 
-                <div class="collapse show" id="Antiterminator">
+                <div class="show" id="Antiterminator">
                   <div class="card card-body">
                         <img alt="Bootstrap Image Preview" style="width:80%" src="../tbox_images/tbox_image2.png" />
                   </div>
                 </div>
                 
-                <div class="collapse" id="Terminator">
+                <div class="show" id="Terminator">
                   <div class="card card-body">
                         <img alt="Bootstrap Image Preview" style="width:80%" src="../tbox_images/tbox_image.png" />
                   </div>
@@ -199,13 +199,13 @@
                 /* This changes the button's label */
                 btn.innerHTML = 'You clicked me!';
                $("#Antiterminator").classList.remove("show"); /*test collapsing*/
-               $("#Terminator").toggle("show"); 
+               $("#Terminator").classList.toggle("show"); 
             };
               
             btn_antiterm.onclick = function() {
                 /* This changes the button's label */
                 btn.innerHTML = 'You clicked me!';
-               $("#Antiterminator").toggle("show");  /*test collapsing*/
+               $("#Antiterminator").classList.toggle("show");  /*test collapsing*/
                $("#Terminator").classList.remove("show");
             };
     	</script>
