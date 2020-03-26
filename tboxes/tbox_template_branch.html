@@ -115,7 +115,7 @@
         
         
         <!---FASTA SEQUENCE-->
-        <div class="col-md-12 pt-2 pb-1">
+        <div class="col-md-12 pt-2 pb-2">
             <h3 style="font-family:Helvetica Neue; font-size:22px">FASTA Sequence</h3>
             <div class="card card-body bg-light" style="font-family: Courier">
             >T-Box 00X2S (Full)
@@ -125,7 +125,7 @@
             
             
         <!---Fold representation-->
-        <div class="col-md-12 pt-2 pb-1">
+        <div class="col-md-12 pt-2 pb-2">
             <h3 style="font-family:Helvetica Neue; font-size:22px">Fold dot-bracket representation</h3>
                 <div class="card card-body bg-light" style="font-family: Courier">
 
@@ -145,15 +145,38 @@
         </div>
             
             
-            <div class="col-md-12 pt-5 pb-5">
-                  <h3 style="font-family:Helvetica Neue; font-size:22px">
-                      Predicted secondary structure (anti-terminator)</h3>
-                  <div class="row">
-                      <div class="col-md-12">
-                          <img alt="Bootstrap Image Preview" style="width:80%" src="../tbox_images/tbox_image2.png" />
-                      </div>
+            
+        <!---FASTA SEQUENCE-->
+        <div class="col-md-12 pt-2 pb-2">
+            <h3 style="font-family:Helvetica Neue; font-size:22px"> Predicted secondary structures </h3>
+            <div class="card card-body bg-light">
+                
+                 <p>
+                  <a class="btn btn-primary" data-toggle="collapse" href="#Antiterminator" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    Anti-terminator
+                  </a>
+                  <a class="btn btn-primary" data-toggle="collapse" href="#Terminator" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    Terminator
+                  </a>
+                </p>
+                
+                <div class="collapse" id="Antiterminator">
+                  <div class="card card-body">
+                        <img alt="Bootstrap Image Preview" style="width:80%" src="../tbox_images/tbox_image2.png" />
                   </div>
-              </div>
+                </div>
+                
+                <div class="collapse" id="Terminator">
+                  <div class="card card-body">
+                        <img alt="Bootstrap Image Preview" style="width:80%" src="../tbox_images/tbox_image.png" />
+                  </div>
+                </div>
+
+            </div>
+        </div>
+        
+        
+
             
             
             
