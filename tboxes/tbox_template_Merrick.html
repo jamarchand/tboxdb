@@ -152,12 +152,12 @@
             <div class="card card-body bg-light">
                 
                  <p>
-                  <a class="btn btn-primary" id = "btn_antiterm" role="button" aria-expanded="false" aria-controls="collapseExample">
+                  <button class="btn btn-primary" id = "btn_antiterm" data-toggle="collapse" data-target=".collapse" role="button" aria-expanded="false" aria-controls="collapseExample">
                     Anti-terminator
-                  </a>
-                  <a class="btn btn-primary" id = "btn_term" role="button" aria-expanded="false" aria-controls="collapseExample">
+                  </button>
+                  <button class="btn btn-primary" id = "btn_term" data-toggle="collapse" data-target=".collapse" role="button" aria-expanded="false" aria-controls="collapseExample">
                     Terminator
-                  </a>
+                  </button>
                 </p>
                 
                 <div class="collapse show" id="Antiterminator">
@@ -180,29 +180,33 @@
         <button id="buttonId" class="buttonClass">I am a button!</button>
 
         <script>
-          function toggleMenu(){
-           $("#Antiterminator").collapse('hide')
-           $("#Terminator").collapse('show') 
-          }
-          
-          
             /* This assigns the element with id 'buttonId' to 'btn' */
             var btn = document.getElementById('buttonId');
             
+            var btn_term = $("#btn_term")
+            var btn_antiterm = $("#btn_antiterm")
+            
             /* This sets the action to perform on a click event */
-            $("#btn_term").onclick = function() {
+            btn.onclick = function() {
                 /* This changes the button's label */
                 btn.innerHTML = 'You clicked me!';
-               $("#Antiterminator").collapse('hide') /*test collapsing*/
-               $("#Terminator").collapse('show') 
-              
-              
-              
-               $("#btn_antiterm").onclick = function() {
+               $("#Antiterminator").collapse('hide'); /*test collapsing*/
+               $("#Terminator").collapse('show'); 
+            };
+            
+            /* This sets the action to perform on a click event */
+            btn_term.onclick = function() {
                 /* This changes the button's label */
-                btn.innerHTML = 'You clicked me!';
-               $("#Antiterminator").collapse('show') /*test collapsing*/
-               $("#Terminator").collapse('hide') 
+                btn_term.innerHTML = 'You clicked me!';
+               $("#Antiterminator").collapse('hide'); /*test collapsing*/
+               $("#Terminator").collapse('show'); 
+
+              
+               btn_antiterm.onclick = function() {
+                /* This changes the button's label */
+                btn_antiterm.innerHTML = 'You clicked me!';
+               $("#Antiterminator").collapse('show'); /*test collapsing*/
+               $("#Terminator").collapse('hide'); 
             };
     	</script>
             
