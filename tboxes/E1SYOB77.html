@@ -60,8 +60,11 @@
 </div>
 </nav>
 <!-- Nav bar end-->
-    
-    
+
+
+
+
+
     <div id="proteinTable_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer" style="padding-left:8%; padding-right:8%; font-size:12px">
     
     <div class="tablecontainer_container-fluid mt-4 pt-5">
@@ -70,28 +73,16 @@
           <div class="container-fluid small mb-2 mt-3 container"  style="font-size: 18px">
             <div class="row">
         <div class="col-md-12">
-            <h3 style="font-size:30px; font-family:Helvetica Neue; color:#CC00CC">T-Box E1SYOB77</h3>
-            <p style="font-size:18px">Putative ARG (GCU) T-Box from Bacillus sp. TS-2</p>
+            <h2 style="color:#CC00CC">T-Box E1SYOB77</h2>
+            <h3>Putative ARG (GCU) T-Box from Bacillus sp. TS-2</h3>
         <div class="row">
                     
                     
-                    
-         <style>
-             .table td, .table th {
-                 padding: 0;
-                 vertical-align: top;
-                 border-top: 0px solid;
-             }
-         </style>
-         
-         
-
         <!---SOURCE INFORMATION-->
         <div class="col-md-12 pt-3 pb-2">
-                <h3 style="font-family:Helvetica Neue; font-size:18px">
-                    Source information</h3>
+                <h4>Source information</h4>
         <div class="card card-body bg-light">
-                <table class="table" style="font-size:16px; padding:1pt">
+                <table class="table">
                         <tbody>
                             <tr><td>T-Box Database ID</td><td>E1SYOB77</td></td></tr>
                             <tr><td>Host Organism</td><td>Bacillus sp. TS-2</td></td></tr>
@@ -113,13 +104,11 @@
         </div>
         
         
-        
         <!---FASTA SEQUENCE-->
         <div class="col-md-12 pt-3 pb-2">
-            <h3 style="font-family:Helvetica Neue; font-size:18px">FASTA Sequence</h3>
-            <div class="card card-body bg-light" style="font-family: Courier">
-
-            <div class="card card-body bg-white" style="font-family: Courier; font-size: 12pt">
+            <h4>FASTA Sequence</h4>
+            <div class="card card-body bg-light">
+            <div class="card card-body bg-white" id="fasta">
             >T-Box E1SYOB77
             <br> TGAAAAACTTTGATGAAGAATGAAAAAATGAATTCCATTTAAGAGAACTAGTGGTTGGTGTGAACTAGTATGGAGCATTTTCGATAGCGCTTCGGAGTTAGTGTATTGAACTTAAGTAAGTACACTCGGTTAATCCGTTATCTTGGATTGTTATCCACAAGTTGCATGCTTTAGCATGAATGAGGGTGGTACCGCGGTTCAAACCTTCCGCCCCTCAC
             </div>
@@ -128,12 +117,9 @@
         
         
         
-
-        
-        
         <!---Secondary structure predictions-->
             <div class="col-md-12 pt-3 pb-2">
-              <h3 style="font-family:Helvetica Neue; font-size:18px"> Predicted secondary structures </h3>
+              <h4> Predicted secondary structures </h4>
               <div class="card card-body bg-light">
                   
                    <p>
@@ -153,7 +139,7 @@
                   
                   <div class="collapse" id="Terminator">
                     <div class="card card-body">
-                          <img alt="Bootstrap Image Preview" style="width:80%" src="kamesh.jpg" />
+                          <img alt="Bootstrap Image Preview" style="width:80%" src="../tbox_images/terminator.png" />
                     </div>
                   </div>
 
@@ -162,7 +148,7 @@
         
         
         
-        <!---javascript-->
+        <!---javascript for image button, can be moved later-->
         <script>
             var btn_term = document.getElementById('btn_term');
             var btn_antiterm = document.getElementById('btn_antiterm');
@@ -182,14 +168,14 @@
             
         <!---Fold representation-->
         <div class="col-md-12 pt-3 pb-2">
-            <h3 style="font-family:Helvetica Neue; font-size:18px">Secondary structure dot-bracket representation</h3>
-                <div class="card card-body bg-light" style="font-family: Courier">
+            <h4>Secondary structure dot-bracket representation</h4>
+                <div class="card card-body bg-light">
 
-                    <div class="card card-body bg-white" style="font-family: Courier; font-size:12pt">
+                    <div class="card card-body bg-white" id="fasta">
                         <strong>T-Box E1SYOB77 Anti-terminator</strong>
                         ::::::<<------<<<<-------<<<<<<-------<<<--------<<<<<<___________>>>>>>>>>----->>>>>>-------->>>>--->>,,<<<<<<<_____________>>>>>>>,<<<______>>>,,,,.......,,,,,,,,,,,,,,.,<<<<<<<________>>>>>>>,,,,<<<<-------<<<<<_____.._>>>>>>>>>:::
                     </div>
-                    <div class="card card-body bg-white" style="font-family: Courier; font-size:12pt">
+                    <div class="card card-body bg-white" id="fasta">
                         <strong>T-Box E1SYOB77 Terminator</strong>
                         ::::::<<------<<<<-------<<<<<<-------<<<--------<<<<<<___________>>>>>>>>>----->>>>>>-------->>>>--->>,,<<<<<<<_____________>>>>>>>,<<<______>>>,,,,.......,,,,,,,,,,,,,,.,<<<<<<<________>>>>>>>,,,,<<<<-------<<<<<_____.._>>>>>>>>>:::
                     </div>
@@ -197,29 +183,26 @@
         </div>
             
             
-            
 
-        
-        
           <!---Thermodynamic calculations-->
           <div class="col-md-12 pt-3 pb-2">
-              <h3 style="font-family:Helvetica Neue; font-size:18px">Thermodynamics</h3>
-                  <div class="card card-body bg-light" style="font-family: Courier">
+              <h4>Thermodynamics</h4>
+                  <div class="card card-body bg-light">
                   </div>
           </div>
                 
                 
         <!---tRNA predictions-->
             <div class="col-md-12 pt-3 pb-2">
-                <h3 style="font-family:Helvetica Neue; font-size:18px">tRNA prediction</h3>
+                <h4>tRNA prediction</h4>
                     <div class="card card-body bg-light">
-                        <div class="card card-body bg-white" style="font-family: Courier; font-size:12pt">
+                        <div class="card card-body bg-white" id="fasta">
                             <strong>Best tRNA match</strong>
                            nan
-                            <br>[$*SBEST_TRNA*$]
+                            <br>nan
 
                         </div>
-                        <div class="card card-body bg-white" style="font-family: Courier; font-size:12pt">
+                        <div class="card card-body bg-white" id="fasta">
                             <strong>All possible tRNA matches</strong>
                              nan
                         </div>
@@ -227,12 +210,11 @@
             </div>
                 
                 
-        <!---Inferno output information-->
+        <!---Infernal output information-->
         <div class="col-md-12 pt-3 pb-2">
-                <h3 style="font-family:Helvetica Neue; font-size:18px">
-                   Inferno output</h3>
+                <h4>Infernal output</h4>
         <div class="card card-body bg-light">
-                <table class="table col-md-3" style="font-size:16px; padding:1pt">
+                <table class="table col-md-4" style="font-size:16px; padding:1pt">
                         <tbody>
                             <tr><td>E-Value</td><td>7.499999999999999e-29</td></td></tr>
                             <tr><td>Score</td><td>122.9</td></td></tr>
@@ -241,18 +223,18 @@
                         </tbody>
                     </table>
                 
-                <div class="card card-body bg-white" style="font-family: Courier; font-size:12pt">
-                    <strong>Inferno seed sequence</strong>
+                <div class="card card-body bg-white" id="fasta">
+                    <strong>Infernal seed sequence</strong>
                     >BAWL01000013.1/102148-102365
                     <br>TGAAAAACTTTGATGAAGAATGAAAAAATGAATTCCATTTAAGAGAACTAGTGGTTGGTGTGAACTAGTATGGAGCATTTTCGATAGCGCTTCGGAGTTAGTGTATTGAACTTAAGTAAGTACACTCGGTTAATCCGTTATCTTGGATTGTTATCCACAAGTTGCATGCTTTAGCATGAATGAGGGTGGTACCGCGGTTCAAACCTTCCGCCCCTCAC
                 </div>
                 
-                <div class="card card-body bg-white" style="font-family: Courier; font-size:12pt">
-                    <strong>Inferno output sequence</strong>
-                    >Inferno-BAWL01000013.1/102148-102365
+                <div class="card card-body bg-white" id="fasta">
+                    <strong>Infernal output sequence</strong>
+                    >Infernal-BAWL01000013.1/102148-102365
                     <br>UGAAAAACUUUGAUGAAGA-AUGAAAAAAUGAA--UUCCAUUUAAGAGAACUAGUGGUUGGUGUGAACUAGUAUGGAG-CAUUUUCGAU-AGCGCUUCGGAGUUAGUGUAUUGAA--CUUAAGUAAGUACACUCGGUUA-AUCCGUUAUcuuggauUGUUAUCCACAAGUuGCAUGCUU--------UAGCAUGAAUGAGGGUGGUACCGCGGUUCAAAccUUCCGCCCCUCAC
                     <br><br>
-                    >Inferno-Dot-BAWL01000013.1/102148-102365
+                    >Infernal-Dot-BAWL01000013.1/102148-102365
                     <br>::::::<<------<<<<-------<<<<<<-------<<<--------<<<<<<___________>>>>>>>>>----->>>>>>-------->>>>--->>,,<<<<<<<_____________>>>>>>>,<<<______>>>,,,,.......,,,,,,,,,,,,,,.,<<<<<<<________>>>>>>>,,,,<<<<-------<<<<<_____.._>>>>>>>>>:::
                 </div>
                 

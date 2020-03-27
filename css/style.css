@@ -27,3 +27,43 @@ p {
 #example_filter input {
         border-radius: 12px;
 }
+
+
+h2 {
+    font-size: 30px;
+    font-family: Helvetica Neue
+}
+
+h3 {
+    font-family: 'Helvetica-Light';
+    font-size: 18px
+}
+
+h4 {
+    font-size: 18px;
+    font-family: Helvetica Neue
+}
+
+h5 {
+    font-size: 22px;
+    font-family: Helvetica Neue
+}
+
+#fasta {
+    font-family: Courier;
+    font-size: 16px
+}
+
+#bulletpoint {
+    font-family: 'Helvetica-Light';
+    font-size: 18px
+    list-style-type: none;
+
+}
+.table td, .table th {
+    padding: 0;
+    vertical-align: top;
+    border-top: 0px solid;
+    font-size:16px;
+}
+
