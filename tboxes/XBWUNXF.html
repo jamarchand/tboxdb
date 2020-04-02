@@ -18,11 +18,33 @@
   <link type="text/css" rel="stylesheet" href="../css/style.css"/>
 
   
+  
+  <style>
+      h2 {
+          color: #FA51C7
+      }
+  
+      h4 {
+          color: #FA51C7
+      }
+    
+    #navbkg {
+        background-color: #FA51C7
+        }
+  
+  .btn-warning {
+      color: #FFFFFF;
+      background-color: #FA51C7;
+      border-color: #FA51C7
+
+  }
+  </style>
+  
 <body style="font-family: Helvetica-Light">
     
 <!-- Nav bar start-->
-<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top pt-3 mx-auto pr-5 pl-5" >
-<div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+<nav class="navbar navbar-expand-md navbar-dark fixed-top pt-3 mx-auto pr-5 pl-5" id='navbkg'>
+<div class="navbar-collapse collapse w-100 order-3 dual-collapse2" >
   <ul class="navbar-nav ml-auto pr-5">
       <a class="navbar-brand" href="about.html"><strong>T-Box</strong> Database</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -73,7 +95,7 @@
           <div class="container-fluid small mb-2 mt-3 container"  style="font-size: 18px">
             <div class="row">
         <div class="col-md-12">
-            <h2 style="color:#CC00CC">T-Box XBWUNXF</h2>
+            <h2>T-Box XBWUNXF</h2>
             <h3>Putative THR (GGU) T-Box from Clostridium sp. HMP27</h3>
         <div class="row">
                     
@@ -87,7 +109,7 @@
                             <tr><td>T-Box Database ID</td><td>XBWUNXF</td></td></tr>
                             <tr><td>Host Organism</td><td>Clostridium sp. HMP27</td></td></tr>
                             <tr><td>T-Box Genomic Accession</td><td><a href=https://www.ncbi.nlm.nih.gov/nuccore/JMFY01000017?report=genbank&from=2167&to=2386>JMFY01000017.1/2167-2386</a></td></td></tr>
-                            <tr><td>Length</td><td>220</td></td></tr>
+                            <tr><td>Length</td><td>220nt</td></td></tr>
                             <tr><td>Type</td><td>Transcriptional</td></td></tr>
                             <tr><td>Stem I Locus</td><td>7-106</td></td></tr>
                             <tr><td>Specifier Loop Locus</td><td>90-98</td></td></tr>
@@ -117,29 +139,30 @@
         
         
         
+
         <!---Secondary structure predictions-->
             <div class="col-md-12 pt-3 pb-2">
               <h4> Predicted secondary structures </h4>
               <div class="card card-body bg-light">
                   
                    <p>
-                    <button class="btn btn-primary" id="btn_antiterm" aria-expanded="false" aria-controls="collapseExample">
+                    <button class="btn btn-warning" id="btn_antiterm" aria-expanded="false" aria-controls="collapseExample">
                       Anti-terminator
                     </button>
-                    <button class="btn btn-primary" id="btn_term" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    <button class="btn btn-warning" id="btn_term" role="button" aria-expanded="false" aria-controls="collapseExample">
                       Terminator
                     </button>
                   </p>
                   
-                  <div class="collapse" id="Antiterminator">
-                    <div class="card card-body">
-                          <img alt="Bootstrap Image Preview" style="width:80%" src="../tbox_images/tbox_image2.png" />
+                  <div class="collapse item-image" id="Antiterminator">
+                     <div class="card card-body" style="height:300px">
+                            <img alt="Terminator representation" style="width: 100%; height:100%; overflow: visible; vertical-align: bottom" src="../tbox_images/anti/XBWUNXF_anti.png" />
+                      </div>
                     </div>
-                  </div>
                   
                   <div class="collapse" id="Terminator">
-                    <div class="card card-body">
-                          <img alt="Bootstrap Image Preview" style="width:80%" src="../tbox_images/terminator.png" />
+                    <div class="card card-body" style="height:300px">
+                          <img alt="Terminator representation" style="width: 100%; height:100%; overflow: visible" src="../tbox_images/term/XBWUNXF_term.png" />
                     </div>
                   </div>
 
@@ -212,9 +235,13 @@
                 
         <!---Infernal output information-->
         <div class="col-md-12 pt-3 pb-2">
-                <h4>Infernal output</h4>
+                <h4>Infernal T-Box prediction output</h4>
         <div class="card card-body bg-light">
-                <table class="table col-md-8" style="font-size:16px; padding:1pt">
+            
+            <div class="card card-body bg-white" id="fasta">
+                <table class="table col-md-8" style="font-size:14px; padding:0rem">
+                    <strong>Infernal prediction values</strong>
+
                         <tbody>
                             <tr><td>E-Value</td><td>2.0999999999999998e-27</td></td></tr>
                             <tr><td>Score</td><td>117.2</td></td></tr>
@@ -222,21 +249,24 @@
                             <tr><td>CM Accuracy</td><td>0.87</td></td></tr>
                         </tbody>
                     </table>
-                
+                </div>
+
+            
+            
                 <div class="card card-body bg-white" id="fasta">
-                    <strong>Infernal seed sequence</strong>
+                    <strong>Seed sequence</strong>
                     >JMFY01000017.1/2167-2386
                     <br>AAAAAAGCAATGAAAAGGAAGAGTAAGCAATTAAATTATTACTAGAGAGGAAAATTCACTGGCTGAAAGATTTTCTTAATAATGTTGTTGAAAACCACCTTAGAGCTGTATACTGAAATTTAGTAAGTATTACCGTTGCCTGCGTTAAGGGTTCAAAGAAGATAATATATTATATGTATTATTAATTTGGGTGGAACCACGGTTATAAATCGTCCCAGTG
                 </div>
                 
                 <div class="card card-body bg-white" id="fasta">
-                    <strong>Infernal output sequence</strong>
+                    <strong>Output sequence</strong>
                     >Infernal-JMFY01000017.1/2167-2386
                     <br>AAAAAAGCAAUGAAAAGGAAGAGUAAGCAAUUAAAUUAUUAcUAGAGAGGAAAAUUCACUgGCUGAAAGAUUUUcUUAAUAAUGUUGUUGAAAACCACCUUAGAGCUGUA-UACUGAA--AUUUAGUAAGUAUUACCGUUGC-CUGCGUUA---AGGGUUCAAAGAAGAUAAUAUAUuAUAUGUAUUAUUAAUUUGGGUGGAACCACGGUUAUAA-AUCGUCCCAGUG
                 </div>
                 
                 <div class="card card-body bg-white" id="fasta">
-                    <strong>Infernal output structure</strong>
+                    <strong>Output structure</strong>
                     >Infernal-Structure-JMFY01000017.1/2167-2386
                     <br>......((......((((.......((((((.......(((.........((((((............)))))).))).....))))))........))))...))..(((((((.............))))))).(((......)))...................(((((((.........)))))))....((((.......(((((......)))))))))...
                 </div>
