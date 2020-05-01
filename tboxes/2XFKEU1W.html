@@ -21,21 +21,21 @@
   
   <style>
       h2 {
-          color: #DC143C
+          color: #4682B4
       }
   
       h4 {
-          color: #DC143C
+          color: #4682B4
       }
     
     #navbkg {
-        background-color: #DC143C
+        background-color: #4682B4
         }
   
   .btn-warning {
       color: #FFFFFF;
-      background-color: #DC143C;
-      border-color: #DC143C
+      background-color: #4682B4;
+      border-color: #4682B4
 
   }
   </style>
@@ -266,8 +266,8 @@
                     <div class="card card-body bg-light">
                         <div class="card card-body bg-white" id="fasta">
                             <strong>Best tRNA match</strong>
-                           nan
-                            <br>nan
+                           TBDB tRNA pairing failed
+                            <br>tRNAscan-SE failed to find tRNA in host organism with anticodon matching predicted T-Box specifier.
 
                         </div>
                     </div>
@@ -276,7 +276,7 @@
                 
         <!---Infernal output information-->
         <div class="col-md-12 pt-3 pb-2">
-                <h4>Infernal T-Box prediction output</h4>
+                <h4>INFERNAL T-Box prediction output</h4>
         <div class="card card-body bg-light">
             
             <div class="card mt-1 card-body bg-white" id="fasta">
@@ -284,14 +284,14 @@
                     <strong>Infernal prediction values</strong>
 
                         <tbody>
-                            <tr><td>E-Value js</td><td><div id="evalue"></div></td></td></tr>
+                            <tr><td>E-Value</td><td><div id="evalue"></div></td></td></tr>
                             <tr><td>Score</td><td>130.9</td></td></tr>
                             <tr><td>Bias</td><td>0.0</td></td></tr>
                             <tr><td>CM Accuracy</td><td>0.97</td></td></tr>
                         </tbody>
                     </table>
                 
-                <div class="pb-3" style="font-size: 14px">*More information about the meaning of these values can be <a href="#">found here</a>.
+                <div class="pb-3" style="font-size: 14px">*More information about the meaning of these values can be <a href="http://eddylab.org/infernal/Userguide.pdf">found here</a>.
             </div>
             </div>
                 
@@ -306,7 +306,7 @@
                 
                 <div class="card pt-3 mt-1 card-body bg-white" id="fasta">
                 <table class="table col-md-10" style="font-size:14px; padding:0rem">
-                    <strong>T-Box structure prediction from seed - feature [start,end]</strong>
+                    <strong>T-Box structure prediction from source - feature [start,end]</strong>
                         
                         <tbody>
                             <tr><td>Stem I locus</td><td>[7,106]</td></td></tr>
@@ -324,19 +324,19 @@
             
             
                 <div class="card pt-3 mt-1 card-body bg-white" id="fasta">
-                    <strong>Seed sequence</strong>
+                    <strong>Input source sequence</strong>
                     >ALAN01000153.1:83-365
                     <br>ATACAAGCATGGAAGGGAATACAGTAGTGCTTAGCAATTTGTTTTCAGAGAGCTGATGGCCGGTGTGAATCAGTACAAATGTAAGCATGAATTACACTCCTGGAGTTTCTTTTTCGTAGTAAAGGCAGCAGTCTTTATGAAGGGGAAGACGGCCAACAAAGTCGTTATTAAAATGAAGTGGTGAGCGTATGCTCGCAACTAGGGTGGTACCGCGAAGTCTATTCGTCCCTACTGGTTTATTCCAGTAGGGACTTTTTTT
                 </div>
                 
                 <div class="card card-body mt-1 bg-white" id="fasta">
-                    <strong>Output sequence</strong>
+                    <strong>INFERNAL output sequence</strong>
                     >Infernal-ALAN01000153.1:83-365
                     <br>AUACAAGCAUGGAAGGGAaUACAGUAGUGCUUAGCAAUUUGUUUuCAGAGAGCUGAUGGCCGGUGUGAAUCAGUACAAAUGUAAGCAUGAAUUACAcUCCUGGAGUUUCUUUUUCGUAGuaaaggcagcaguCUUUAUGAAGGGGAAGACGGCCAAcaaAGUCGUUA---UUAAAAUGAAGUGGUGAGCG------UAUGCUCGCAACUAGGGUGGUACCGCGAAGUCUA-UUCGUCCCUACU
                 </div>
                 
                 <div class="card card-body mt-1 bg-white" id="fasta">
-                    <strong>Output structure</strong>
+                    <strong>INFERNAL output structure (antiterminator)</strong>
                     >Infernal-Structure-ALAN01000153.1:83-365
                     <br>::::::<<------<<<<.-------<<<<<<-------<<<--.------<<<<<<___________>>>>>>>>>----->>>>>>--------.>>>>--->>,,<<<<<<<____............._________>>>>>>>,<<<____...__>>>,,,,,,,,,,,,,,,,,,,<<<<<<<________>>>>>>>,,,,<<<<-------<<<<<______>>>>>>>>>:::
                 </div>
