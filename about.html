@@ -75,18 +75,6 @@
     <h3 class="text-justify">The T-Box database (TBDB) is a database that attempts to annotate structural and genetic features of T-Box leader sequences. The goal of this database is to enrich information available about T-Box sequences in order to facilitate research in this area. While >15,000 T-Box sequences have been discovered by genome mining, only a handful have been experimentally characterized. We hope that the information contained in this databse will decrease the barrier to entry into this field. </h3>
     </div>
     
-    
-    
-    <div class="pt-3"><h5>Data sources</h5></div>
-    <h3 class="text-justify">Seed sequences for building the TBDB were obtained from previously published datasets. Structurally annotated datasets from <a href = "https://dx.doi.org/10.1261/rna.819308">Vitreschak <i>et al.</i></a> were used for validation. T-Boxes were assigned a unique ID based on sequence to de-duplicate entries shared between datasources.
-    </h3>
-      <ul id="bulletpoint">
-        <li><a href = "https://rfam.xfam.org/family/RF00230">The Rfam database</a> (14106 T-boxes, predicted using <a href=http://eddylab.org/infernal/>INFERNAL</a>)</li>
-        <li><a href = "http://operons.ibt.unam.mx/gctNG/">GeCont3</a> (4491 T-boxes)</li>
-        <li><a href = "https://dx.doi.org/10.1261/rna.819308">Vitreschak <i>et al.</i>, 2008</a> (698 T-boxes, structurally annotated)</li>
-    </ul>
-      
-      
   <div class="pt-3"><h5>Feature prediction</h5></div>
   <h3 class="text-justify">  The predictions contained in the TBDB were performed using the methods found in the <a href="#">bioRxiv</a>. All code used to generate the databse is present in <a href = "https://github.com/mpiersonsmela/tbox"> our Github.</a> In summary, our pipeline performs feature prediction in two steps. First, the seed sequence is passed to INFERNAL, which uses a covariance model (<a href = "http://rfam.xfam.org/family/RF00230/cm">RF00230.cm</a>, obtained from Rfam) to predict secondary structure. The secondary structure is then searched for conserved motifs including Stem I, the specifier loop, and the antiterminator. The codon and discriminator are extracted from the position of these motifs. To predict terminator structures, the 3'-end of the T-Box leader is used as a seed for INFERNAL. Specifier loops were located based on their proximity to the base of Stem I, while anti-acceptor sequence (containing the anti-discriminator base) was detected from anti-terminator loop. Most likely codons within specifier loops were chosen based on their locus within the specifier loop, though alternative codon-frames are also presented. </h3>
   
@@ -98,16 +86,16 @@
        <strong>T-Boxes (n = 698)</strong><br>
        <ul>
        <li>694 sequences had a T-Box detected by INFERNAL (99.5%)</li>
-       <li>619 scored high enough to make a feature predictions (88.6%)</li>
+       <li>621 scored high enough to make a feature predictions (89.5%)</li>
        </ul>
     </ul>
     <ul id="bulletpoint">
-        <strong>Codons (n = 619)</strong><br>
+        <strong>Codons (n = 621)</strong><br>
         <ul>
-        <li>555 codons were predicted correctly (89.6%)</li>
-        <li>22 codons were off by -1 (3.5%)</li>
-        <li>22 codons were off by +1 (3.5%)</li>
-        <li>20 codons were otherwise incorrect (3%)</li>
+        <li>589 codons were predicted correctly (94.8%)</li>
+        <li>1 codon was off by -1 (0.2%)</li>
+        <li>9 codons were off by +1 (1.4%)</li>
+        <li>22 codons were otherwise incorrect (3.5%)</li>
      </ul>
     </ul>
 
@@ -129,11 +117,18 @@
     <h3 class="text-justify">  In nature, T-Box logic is controlled by cognate tRNAs that Watson-Crick base pair with the T-Box specifier loop and anti-acceptor arm sequences (T-Box region). However, other tertiary interactions are thought to play an important role in deciding if a specific tRNA can control T-Box logic. In particular, structural features in certain T-Box Stem I and Stem II regions are thought to interact with tRNA in a sequence-specific manner. In order to facilitate discovery of functional T-Box leaders, we used <a href=http://lowelab.ucsc.edu/tRNAscan-SE/>tRNAscan-SE</a> to identify all tRNAs from T-Box hosts that could pair with each T-Box. Host tRNA identification was performed for all complete sequence records. For partial sequence records, tRNA identification was attempted and we report matching tRNAs if any were identified.
     </h3>
     
-    
+    <div class="pt-3"><h5>Data sources</h5></div>
+    <h3 class="text-justify">Seed sequences for building the TBDB were obtained from previously published datasets. Structurally annotated datasets from <a href = "https://dx.doi.org/10.1261/rna.819308">Vitreschak <i>et al.</i></a> were used for validation. T-Boxes were assigned a unique ID based on sequence to de-duplicate entries shared between datasources.
+    </h3>
+      <ul id="bulletpoint">
+        <li><a href = "https://rfam.xfam.org/family/RF00230">The Rfam database</a> (14106 T-boxes, predicted using <a href=http://eddylab.org/infernal/>INFERNAL</a>)</li>
+        <li><a href = "http://operons.ibt.unam.mx/gctNG/">GeCont3</a> (4491 T-boxes)</li>
+        <li><a href = "https://dx.doi.org/10.1261/rna.819308">Vitreschak <i>et al.</i>, 2008</a> (698 T-boxes, structurally annotated)</li>
+    </ul>
+      
     <div class="pb-5"></div>
     <div class="pb-5"></div>
 
-    
   </div>
   <br>
 </html>
