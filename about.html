@@ -13,10 +13,22 @@
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <title>About the T-Box Database</title>
+    <title>About the T-box database</title>
     
     <link type="text/css" rel="stylesheet" href="css/style.css"/>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121083048-5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-121083048-5');
+</script>
+
+
+    
   </head>
 
 
@@ -26,7 +38,7 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top pt-3 mx-auto pr-5 pl-5" >
 <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
   <ul class="navbar-nav ml-auto pr-5">
-      <a class="navbar-brand" href="about.html"><strong>T-Box</strong> Database</a>
+      <a class="navbar-brand" href="about.html"><strong>T-box</strong> Database</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -71,8 +83,8 @@
     
     
     <div class="pt-4">
-    <div class="pt-4"><h2>About the T-Box database</h2></div>
-    <h3 class="text-justify">The T-Box database (TBDB) is a database that attempts to annotate structural and genetic features of T-Box leader sequences. The goal of this database is to enrich information available about T-Box sequences in order to facilitate research in this area. While >15,000 T-Box sequences have been discovered by genome mining, only a handful have been experimentally characterized. We hope that the information contained in this database will decrease the barrier to entry into this field. </h3>
+    <div class="pt-4"><h2>About the T-box database</h2></div>
+    <h3 class="text-justify">The T-box database (TBDB) is a database that attempts to annotate structural and genetic features of T-box leader sequences. The goal of this database is to enrich information available about T-box sequences in order to facilitate research in this area. While >15,000 T-box sequences have been discovered by genome mining, only a handful have been experimentally characterized. We hope that the information contained in this database will decrease the barrier to entry into this field. </h3>
     </div>
     
   <div class="pt-3"><h5>Feature prediction</h5></div>
@@ -84,9 +96,9 @@
 
     
     <ul id="bulletpoint">
-       <strong>T-Boxes (n = 698)</strong><br>
+       <strong>T-boxes (n = 698)</strong><br>
        <ul>
-       <li>694 sequences had a T-Box detected by INFERNAL (99.5%)</li>
+       <li>694 sequences had a T-box detected by INFERNAL (99.5%)</li>
        <li>621 scored high enough to make a feature predictions (89.5%)</li>
        </ul>
     </ul>
@@ -115,11 +127,11 @@
     </h3>
     
     <div class="pt-3"><h5>tRNA pairing prediction</h5></div>
-    <h3 class="text-justify">  In nature, T-Box logic is controlled by cognate tRNAs that Watson-Crick base pair with the T-Box specifier loop and anti-acceptor arm sequences (T-Box region). However, other tertiary interactions are thought to play an important role in deciding if a specific tRNA can control T-Box logic. In particular, structural features in certain T-Box Stem I and Stem II regions are thought to interact with tRNA in a sequence-specific manner. In order to facilitate discovery of functional T-Box leaders, we used <a href=http://lowelab.ucsc.edu/tRNAscan-SE/>tRNAscan-SE</a> to identify all tRNAs from T-Box hosts that could pair with each T-Box. Host tRNA identification was performed for all complete sequence records. For partial sequence records, tRNA identification was attempted and we report matching tRNAs if any were identified.
+    <h3 class="text-justify">  In nature, T-box logic is controlled by cognate tRNAs that Watson-Crick base pair with the T-box specifier loop and anti-acceptor arm sequences (T-box region). However, other tertiary interactions are thought to play an important role in deciding if a specific tRNA can control T-box logic. In particular, structural features in certain T-box Stem I and Stem II regions are thought to interact with tRNA in a sequence-specific manner. In order to facilitate discovery of functional T-box leaders, we used <a href=http://lowelab.ucsc.edu/tRNAscan-SE/>tRNAscan-SE</a> to identify all tRNAs from T-box hosts that could pair with each T-box. Host tRNA identification was performed for all complete sequence records. For partial sequence records, tRNA identification was attempted and we report matching tRNAs if any were identified.
     </h3>
     
     <div class="pt-3"><h5>Data sources</h5></div>
-    <h3 class="text-justify">Seed sequences for building the TBDB were obtained from previously published datasets. Structurally annotated datasets from <a href = "https://dx.doi.org/10.1261/rna.819308">Vitreschak <i>et al.</i></a> were used for validation. T-Boxes were assigned a unique ID based on sequence to de-duplicate entries shared between datasources.
+    <h3 class="text-justify">Seed sequences for building the TBDB were obtained from previously published datasets. Structurally annotated datasets from <a href = "https://dx.doi.org/10.1261/rna.819308">Vitreschak <i>et al.</i></a> were used for validation. T-boxes were assigned a unique ID based on sequence to de-duplicate entries shared between datasources.
     </h3>
       <ul id="bulletpoint">
         <li><a href = "https://rfam.xfam.org/family/RF00230">The Rfam database</a> (14106 T-boxes, predicted using <a href=http://eddylab.org/infernal/>INFERNAL</a>)</li>

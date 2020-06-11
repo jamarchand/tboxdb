@@ -13,9 +13,22 @@
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <title>About T-Boxes</title>
+
+    <title>About T-boxes</title>
     
     <link type="text/css" rel="stylesheet" href="css/style.css"/>
+
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121083048-5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-121083048-5');
+    </script>
+
 
   </head>
   
@@ -24,7 +37,7 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top pt-3 mx-auto pr-5 pl-5" >
 <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
   <ul class="navbar-nav ml-auto pr-5">
-      <a class="navbar-brand" href="about.html"><strong>T-Box</strong> Database</a>
+      <a class="navbar-brand" href="about.html"><strong>T-box</strong> Database</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -66,32 +79,32 @@
 <div class="pl-5 pr-5">
   <br><br><br>
     <div class="pt-4">
-    <h2 class="pt-4">What is the T-Box leader sequence?</h2>
+    <h2 class="pt-4">What is the T-box leader sequence?</h2>
     </div>
-    <h3 class="text-justify"> The <a href=https://en.wikipedia.org/wiki/T-box_leader>T-Box leader</a> is a bacterial RNA regulatory element found upstream of many gene clusters associated with amino acid biosynthesis and tRNA-aminoacylation. T-boxes are capable of sensing tRNA aminoacylation state. When an uncharged tRNA is bound, an antiterminator hairpin is formed; otherwise, a terminator hairpin is formed. Downstream genes are therefore transcribed only in the presence of uncharged tRNA.
+    <h3 class="text-justify"> The <a href=https://en.wikipedia.org/wiki/T-box_leader>T-box leader</a> is a bacterial RNA regulatory element found upstream of many gene clusters associated with amino acid biosynthesis and tRNA-aminoacylation. T-boxes are capable of sensing tRNA aminoacylation state. When an uncharged tRNA is bound, an antiterminator hairpin is formed; otherwise, a terminator hairpin is formed. Downstream genes are therefore transcribed only in the presence of uncharged tRNA.
       <br>
       For more information, see the <a href = "http://rfam.xfam.org/family/RF00230/">Rfam entry on T-boxes.</a>
     </h3>
     
     
-    <h4 class="pt-3">T-Box features</h4>
+    <h4 class="pt-3">T-box features</h4>
     <h3>
-      T-Boxes have the following conserved features, listed from 5’ to 3’ end:<br>
+      T-boxes have the following conserved features, listed from 5’ to 3’ end:<br>
       </h3>
     <ul id="bulletpoint" class="text-justify">
     <li><b>Stem I:</b> This is the largest element, and provides most of the affinity for tRNA. It has several loops, and contacts the tRNA at the D/T loops and the anticodon.
       </li>
       <li><b>Specifier loop:</b> Within Stem 1, the specifier loop pairs with the anticodon of the cognate tRNA. This helps determine the T-box specificity.
       </li>
-      <li><b>Stem II/III:</b> T-Boxes often have additional Stem 2 and 3 structures, which are shorter stem-loops. However, these are absent in several families, including glycyl T-boxes. Currently, these features are not included in our database.
+      <li><b>Stem II/III:</b> T-boxes often have additional Stem 2 and 3 structures, which are shorter stem-loops. However, these are absent in several families, including glycyl T-boxes. Currently, these features are not included in our database.
       </li>
-      <li><b>Anti-terminator/terminator:</b> The antiterminator is a hairpin near the 3’ end of the T-Box, containing a bulge with a UGGN sequence that pairs with the NCCA of an uncharged tRNA. The “N” is known as the discriminator base, since it is also recognized by tRNA synthetases. If an uncharged tRNA is not bound, the antiterminator instead adopts the terminator conformation, and transcription terminates.
+      <li><b>Anti-terminator/terminator:</b> The antiterminator is a hairpin near the 3’ end of the T-box, containing a bulge with a UGGN sequence that pairs with the NCCA of an uncharged tRNA. The “N” is known as the discriminator base, since it is also recognized by tRNA synthetases. If an uncharged tRNA is not bound, the antiterminator instead adopts the terminator conformation, and transcription terminates.
       </li>
     </ul>
     
   <img class="w-50 mx-auto d-block" src="img/Figure-Tbox_Background.png" alt="T-box structural features">
     
-  <h4 class="pt-3">T-Boxes in synthetic biology</h4>
+  <h4 class="pt-3">T-boxes in synthetic biology</h4>
   <h3 class="text-justify">
       T-boxes can be useful tools in synthetic biology. In accordance with their natural function, they can be used to direct transcription of downstream genes based on tRNA aminoacylation state.
     More broadly, they can also be used as tRNA-binding elements. For example, <a href = "https://doi.org/10.1038/s41589-020-0500-6">Ishida <i>et al.</i></a> showed that a T-box can be fused to an aminoacylating ribozyme to confer specificity to tRNAs recognized by the T-box.
