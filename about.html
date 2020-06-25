@@ -6,7 +6,10 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <link rel="shortcut icon" href="favicon.ico">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         
@@ -37,8 +40,13 @@
 <!-- Nav bar start-->
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top pt-3 mx-auto pr-5 pl-5" >
 <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+    <div class="container">
+    <a class="navbar-brand" href="https://tbdb.io/">
+             <img src="../logo/TBDB_logo_1_no_fill_white_white.png" height="40 px" alt="tbdb_logo">
+           </a>
+    </div>
   <ul class="navbar-nav ml-auto pr-5">
-      <a class="navbar-brand" href="about.html"><strong>T-box</strong> Database</a>
+      <a class="navbar-brand" href="https://tbdb.io/"><strong>T-box</strong> Database</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -47,18 +55,26 @@
       <li class="nav-item dropdown active">
         <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">about</a>
         <div class="dropdown-menu" aria-labelledby="dropdown01">
-          <a class="dropdown-item" href="about.html">about TBDB</a>
-          <a class="dropdown-item" href="tbox_background.html">tbox background</a>
-          <a class="dropdown-item" href="faq.html">faq</a>
-          <a class="dropdown-item" href="citing.html">how to cite</a>
-          <a class="dropdown-item" href="contact.html">contact</a>
+          <a class="dropdown-item" href="https://tbdb.io/about.html">about TBDB</a>
+          <a class="dropdown-item" href="https://tbdb.io/tbox_background.html">tbox background</a>
+          <a class="dropdown-item" href="https://tbdb.io/faq.html">faq</a>
+          <a class="dropdown-item" href="https://tbdb.io/citing.html">how to cite</a>
+          <a class="dropdown-item" href="https://tbdb.io/contact.html">contact</a>
         </div>
       </li>
       <li class="nav-item dropdown active">
         <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">database</a>
         <div class="dropdown-menu" aria-labelledby="dropdown01">
-          <a class="dropdown-item" href="tbdb.html">browse</a>
-          <a class="dropdown-item" href="database/tbdb.csv">download tdbd</a>
+          <a class="dropdown-item" href="https://tbdb.io/tbdb.html">browse</a>
+          <a class="dropdown-item" href="https://tbdb.io/advanced_search.html">advanced search</a>
+          <a class="dropdown-item" href="https://tbdb.io/specifier_use.html">specifier use table</a>
+          <a class="dropdown-item" href="https://tbdb.io/database/tbdb.csv">download tdbd</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">tools</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown01">
+          <a class="dropdown-item" href="https://github.com/jamarchand/tbox-scan">tbox-scan</a>
         </div>
       </li>
       <li class="nav-item dropdown active">
@@ -88,18 +104,18 @@
     </div>
     
   <div class="pt-3"><h5>Feature prediction</h5></div>
-  <h3 class="text-justify">  The predictions contained in the TBDB were performed using the methods found in the <a href="#">bioRxiv</a>. All code used to generate the databse is present in <a href = "https://github.com/mpiersonsmela/tbox"> our Github.</a> In summary, our pipeline performs feature prediction in two steps. First, the seed sequence is passed to INFERNAL, which uses a covariance model (<a href = "http://rfam.xfam.org/family/RF00230/cm">RF00230.cm</a>, obtained from Rfam) to predict secondary structure. The secondary structure is then searched for conserved motifs including Stem I, the specifier loop, and the antiterminator. The codon and discriminator are extracted from the position of these motifs. 
+  <h3 class="text-justify">  The predictions contained in the TBDB were performed using the methods found in the <a href="https://www.biorxiv.org/content/10.1101/2020.06.17.157016v1">bioRxiv</a>. All code used to generate the databse is present in <a href = "https://github.com/mpiersonsmela/tbox"> our Github.</a> In summary, our pipeline performs feature prediction in two steps. First INFERNAL is used to predict secondary structure, then the secondary structure is searched for conserved features including Stem I, the specifier loop, and the antiterminator. The codon and discriminator are extracted from the position of these motifs.
     Thermodynamic calculations on antiterminator and terminator folds were performed using ViennaRNA. The NCBI accession numbers of the input sequences were used to gather various annotations, including taxonomy and donwstream gene ontology. tRNAscan-SE was used to generate a list of tRNAs for each organism. Most likely codons within specifier loops were chosen based on their position within the specifier loop, with additional refinement using tRNA discriminator base and downstream gene ontology (where present). Alternative codon-frames, where found, are also presented. </h3>
   
   <div class="pt-3"><h5>Benchmarking feature prediction</h5></div>
-  <h3>The structurally-annotated dataset found in <a href = "https://dx.doi.org/10.1261/rna.819308">Vitreschak <i>et al.</i>, 2008</a> was used to validate the accuracy of our feature prediction pipeline. From the 698 seed sequences:</h3>
+  <h3>The structurally-annotated dataset found in <a href = "https://dx.doi.org/10.1261/rna.819308">Vitreschak <i>et al.</i>, 2008</a> was used to validate the accuracy of our feature prediction pipeline. From the 698 initial sequences:</h3>
 
     
     <ul id="bulletpoint">
        <strong>T-boxes (n = 698)</strong><br>
        <ul>
        <li>694 sequences had a T-box detected by INFERNAL (99.5%)</li>
-       <li>621 scored high enough to make a feature predictions (89.5%)</li>
+       <li>621 scored high enough to make a feature prediction (89.5%)</li>
        </ul>
     </ul>
     <ul id="bulletpoint">
@@ -119,6 +135,55 @@
      </ul>
   </ul></p>
 
+    
+    <div class="pt-3"><h5>T-box classification and regulatory type</h5></div>
+    <h3 class="text-justify">
+        We used two different covariance models to build this database: the RFAM class I T-box model (RF00230), and our own translational class II model derived from ileS leader sequences. Qualitatively, class I T-boxes tend to have a larger Stem I structure, while class II T-boxes have a shorter one. In our database, T-boxes detected by the Rfam RF00230 covariance model are mostly Class I transcriptional T-boxes, and T-boxes detected by the our translational model will be class II translational T-boxes. However, there may be instances where the RFAM00230 model predicts the folding of what are class II T-boxes due to similar structural features (in particular, the antiterminator/antisequestrator motif). Additionally, there are other classes of T-boxes (such as S. aureus ileS T-boxes, e.g. <a href="https://tbdb.io/tboxes/RMB1LX9O.html">RMB1LX9O</a>) for which we do not currently have a robust covariance models, but which are sometimes detected by the RF00230 covariance model.
+        <br><br>
+        
+We have attempted to classify the T-boxes in the database by type of regulation. T-boxes predicted using RF00230 are classified as transcriptional if we have been able to identify a downstream terminator hairpin,
+or unknown if they do not. T-boxes predicted using our ileS translational model are classified as translational. In total, we have 20396 putative class I transcriptional T-boxes, 1012 putative class II translational
+T-boxes, and 2128 T-boxes of unknown regulatory type.
+<br><br>
+
+
+<ul id="bulletpoint">
+    Class I model (RFAM00230)<br>
+    <ul>
+        <li>Will fold mostly canonical class I transcriptional T-boxes</li>
+        <li>Sometimes will also fold canonical class I translational T-boxes (terminator usually not found here)
+        </li>
+        <li>Sometimes will fold T-boxes that are actually class II translational (will have a poor INFERNAL output score)
+        </li>
+        
+    </ul>
+    <br>
+    Class II model (TBDB Ile Translational)<br>
+    <ul>
+        <li>Will fold mostly class II Ile translational T-boxes
+        </li>
+        <li>Sometimes will also fold canonical class I T-boxes (will have a poor INFERNAL output score)
+            
+        </li>
+        
+    </ul>
+</ul>
+
+    <div class="pt-3"><h5>Handling complex cases</h5></div>
+    <h3 class="text-justify">
+        The RFAM00230 model does not produce secondary structures with more than one antiterminator at a time. This means that complex T-box leader sequences (such as any partially-double T-boxes). As model outputs, these cases would either be truncated after the first antiterminator/terminator (i.e. missing their second 'half'),  or they would have the first antiterminator/terminator pair not labeled (i.e. first half not shown as a structural loop). The same problem could occur with double T-boxes (tandemly arranged complete T-boxes) where either one of the two T-boxes would be absent or the first T-box's antiterminator/terminator and second T-box's Stem I mischaracterized. As we continue to build new covariance models for finding new T-boxes, we will also be improving existing models to handle complex cases.
+        <br><br>
+        
+We have attempted to classify the T-boxes in the database by type of regulation. T-boxes predicted using RF00230 are classified as transcriptional if we have been able to identify a downstream terminator hairpin,
+or unknown if they do not. T-boxes predicted using our ileS translational model are classified as translational. In total, we have 20396 putative class I transcriptional T-boxes, 1012 putative class II translational
+T-boxes, and 2128 T-boxes of unknown regulatory type.
+<br>
+
+
+
+
+
+    </h3>
 
     <div class="pt-3"><h5>RNA folding thermodynamics</h5></div>
     <h3 class="text-justify">  
@@ -131,7 +196,7 @@
     </h3>
     
     <div class="pt-3"><h5>Data sources</h5></div>
-    <h3 class="text-justify">Seed sequences for building the TBDB were obtained from previously published datasets. Structurally annotated datasets from <a href = "https://dx.doi.org/10.1261/rna.819308">Vitreschak <i>et al.</i></a> were used for validation. T-boxes were assigned a unique ID based on sequence to de-duplicate entries shared between datasources.
+    <h3 class="text-justify">Input sequences for building the TBDB were obtained from previously published datasets. Structurally annotated datasets from <a href = "https://dx.doi.org/10.1261/rna.819308">Vitreschak <i>et al.</i></a> were used for validation. T-boxes were assigned a unique ID based on sequence to de-duplicate entries shared between datasources.
     </h3>
       <ul id="bulletpoint">
         <li><a href = "https://rfam.xfam.org/family/RF00230">The Rfam database</a> (14106 T-boxes, predicted using <a href=http://eddylab.org/infernal/>INFERNAL</a>)</li>

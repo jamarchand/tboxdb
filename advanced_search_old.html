@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <title>T-box Database - TBDB</title>
+    
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121083048-5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-121083048-5');
+</script>
+
+
+    
+  </head>
+
+
+  <!--For database tables-->
+        <script type="text/javascript" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.20/datatables.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css"/>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.20/datatables.min.css"/>
+        <script type="text/javascript" src="database/tbdb_database.js"></script>
+        <script type="text/javascript" src="database/tbdb_options.js"></script>
+
+        
+  <!--end database requirement-->
+  <link type="text/css" rel="stylesheet" href="css/style.css"/>
+
+  
+  
+<body>
+    
+<!-- Nav bar start-->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top pt-3 mx-auto pr-5 pl-5" >
+<div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+    <div class="container">
+    <a class="navbar-brand" href="https://tbdb.io/">
+             <img src="../logo/TBDB_logo_1_no_fill_white_white.png" height="40 px" alt="tbdb_logo">
+           </a>
+    </div>
+  <ul class="navbar-nav ml-auto pr-5">
+      <a class="navbar-brand" href="about.html"><strong>T-box</strong> Database</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">about</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown01">
+          <a class="dropdown-item" href="https://tbdb.io/about.html">about TBDB</a>
+          <a class="dropdown-item" href="https://tbdb.io/tbox_background.html">tbox background</a>
+          <a class="dropdown-item" href="https://tbdb.io/faq.html">faq</a>
+          <a class="dropdown-item" href="https://tbdb.io/citing.html">how to cite</a>
+          <a class="dropdown-item" href="https://tbdb.io/contact.html">contact</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">database</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown01">
+          <a class="dropdown-item" href="https://tbdb.io/tbdb.html">browse</a>
+          <a class="dropdown-item" href="https://tbdb.io/advanced_search.html">advanced search</a>
+          <a class="dropdown-item" href="https://tbdb.io/specifier_use.html">specifier use table</a>
+          <a class="dropdown-item" href="https://tbdb.io/database/tbdb.csv">download tdbd</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">repository</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown01">
+          <a class="dropdown-item" href="https://github.com/jamarchand/tboxdb">site</a>
+          <a class="dropdown-item" href="https://github.com/mpiersonsmela/tbox">source code</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</ul>
+</div>
+</nav>
+<!-- Nav bar end-->
+    
+    
+    
+    <div class="tablecontainer_container-fluid mt-4 pt-5">
+        <div class="pt-4">
+            <p class="text-center" style="font-size:30px; font-family:Helvetica Neue"><strong>Advanced Search</strong></p>
+        <div class="mb-3">
+            <p class="small mb-2 mt-3 container" align="justify" style="font-size: 16px">Testing features for advanced search</a>.
+          </p>
+        </div>
+    </div>
+
+    
+        
+    <main role="main" class="container">
+    <div class="pl-5 pr-5">
+    <div class="pt-4">
+        
+        
+        
+    <div class="row">
+        <div class="form-group col-3 pt-2">
+            <select class="custom-select pt-2" id="search_by">
+              <option value="B1">Organism</option>
+              <option value="B2">Genomic Accession</option>
+              <option value="B3">Nothing</option>
+              <option value="B4">Specifier Sequence</option>
+              <option value="B5">Nothing</option>
+            </select>
+        </div>
+    
+        <div class="col-8">
+           <div class="pt-2">
+            <input id="colsearch_1" placeholder="Organism" class="form-control"/>
+            <input id="colsearch_2" placeholder="Genomic Accession" class="form-control" />
+            <input id="colsearch_4" placeholder="Specifier" class="form-control"/>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    
+    
+    <div class="set-form">
+        <table id="search_table" class="table">
+            <tr>
+                <td>
+                    <div class="form-group col-4 pt-2">
+                        <select class="custom-select pt-2" id="search_by">
+                          <option value="B0">TBDB_ID</option>
+                          <option value="B1">Organism</option>
+                          <option value="B2">Genomic Accession</option>
+                          <option value="B4">Specifier Sequence</option>
+                        </select>
+                    </div>
+                </td>
+                
+                <td>
+                    <div class="col-8">
+                       <div class="pt-2">
+                        <input id="dcolsearch_0" placeholder="Organism" class="form-control"/>
+                        <input id="dcolsearch_1" placeholder="Organism" class="form-control"/>
+                        <input id="dcolsearch_2" placeholder="Genomic Accession" class="form-control" />
+                        <input id="dcolsearch_4" placeholder="Specifier" class="form-control"/>
+                        </div>
+                    </div>
+                </td>
+                
+            </tr>
+        </table>
+        <div class="set-form">
+            <input type="button" id="more_fields" onclick="add_fields();" value="Add More" class="btn btn-info" />
+        </div>
+    
+    
+
+    
+    
+    <div class="row">
+        <div class="pl-3">
+         <button class="btn btn-primary" id="search_2" aria-expanded="false" aria-controls="collapseExample" onclick="adv_search()">Advanced Search</button>
+         <button class="btn btn-warning" id="search_2" aria-expanded="false" aria-controls="collapseExample" onClick="window.location.reload();">Clear</button>
+          <button class="btn btn-success" id="search_2" aria-expanded="false" aria-controls="collapseExample" onclick="adv_search()">+</button>
+         </div>
+    </div>
+    
+
+    </div>
+        
+        
+    </div>
+
+    </div>
+    </div>
+    </div>
+
+
+    
+    <div id="proteinTable_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer" style="padding-left:8%; padding-right:8%; font-size:12px">
+    <table id="example" class="display compact"  data-page-length='15' style="width:100%">
+        
+
+    </table>
+    
+    
+    </div>
+</div>
+    
+     <div class="tablecontainer_container-fluid mt-4 pb-5"></div>
+    
+    
+    
+    <script>
+       $(document).ready(function() {
+                $('#example').DataTable();
+                $('#example_filter').hide(); // Hide default search datatables where example is the ID of table
+                         
+                
+                $('#colsearch_1').on('keyup', function() {
+                    $('#example')
+                        .DataTable()
+                        .columns(1)
+                        .search(this.value);
+                });
+                         
+                $('#colsearch_2').on('keyup', function() {
+                    $('#example')
+                        .DataTable()
+                        .columns(2)
+                        .search(this.value);
+                });
+                         
+                 $('#colsearch_4').on('keyup', function() {
+                     $('#example')
+                         .DataTable()
+                         .columns(4)
+                         .search(this.value);
+                 });
+                         
+                
+                //$('#example').wrap('<div id="hide" style="display:none"/>');
+
+            });
+        
+        
+        function adv_search(){
+            $('#example')
+                .DataTable()
+                .draw();
+        }
+    
+    
+               
+    
+
+    $('input[id^=c]').hide();
+    $('#colsearch_1').show();
+
+
+          //hide all paragraph
+    $('#search_by').change(function(){
+                              var index = $(this).val().replace('B','');
+                              $('input[id^=c]').hide();
+
+                              //var lable = $(this).val()=="Show"?"Hide":"Show";
+                              //$(this).val(lable);
+                              $('#colsearch_'+index).show();
+                              });
+                              
+                              
+      function add_fields() {
+          document.getElementById("search_table").insertRow(0).innerHTML = '<tr><td><textarea name="Question" placeholder="Question" th:field="${questionAnswerSet.question}" id="question" style = "resize: none; width:100%;"></textarea></td><td><textarea name="Answer" placeholder ="Answer" th: field="${questionAnswerSet.answer}" id="answer" style="resize:none;width: 100%;"></textarea></td ></tr>';
+      }
+
+    </script>
+    
+    
+    
+    
+    
+    </body>
+</html>

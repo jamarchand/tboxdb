@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <link rel="shortcut icon" href="favicon.ico">
+        
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <title>T-box Database - TBDB</title>
+    
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121083048-5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-121083048-5');
+</script>
+
+
+    
+  </head>
+
+
+  <!--For database tables-->
+        <script type="text/javascript" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.20/datatables.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css"/>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.20/datatables.min.css"/>
+        <script type="text/javascript" src="database/tbdb_database.js"></script>
+        <script type="text/javascript" src="database/tbdb_options.js"></script>
+
+        
+  <!--end database requirement-->
+  <link type="text/css" rel="stylesheet" href="css/style.css"/>
+
+  
+  
+<body>
+    
+    
+<!-- Nav bar start-->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top pt-3 mx-auto pr-5 pl-5" >
+<div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+    <div class="container">
+    <a class="navbar-brand" href="https://tbdb.io/">
+             <img src="../logo/TBDB_logo_1_no_fill_white_white.png" height="40 px" alt="tbdb_logo">
+           </a>
+    </div>
+  <ul class="navbar-nav ml-auto pr-5">
+      <a class="navbar-brand" href="https://tbdb.io/"><strong>T-box</strong> Database</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">about</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown01">
+          <a class="dropdown-item" href="https://tbdb.io/about.html">about TBDB</a>
+          <a class="dropdown-item" href="https://tbdb.io/tbox_background.html">tbox background</a>
+          <a class="dropdown-item" href="https://tbdb.io/faq.html">faq</a>
+          <a class="dropdown-item" href="https://tbdb.io/citing.html">how to cite</a>
+          <a class="dropdown-item" href="https://tbdb.io/contact.html">contact</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">database</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown01">
+          <a class="dropdown-item" href="https://tbdb.io/tbdb.html">browse</a>
+          <a class="dropdown-item" href="https://tbdb.io/advanced_search.html">advanced search</a>
+          <a class="dropdown-item" href="https://tbdb.io/specifier_use.html">specifier use table</a>
+          <a class="dropdown-item" href="https://tbdb.io/database/tbdb.csv">download tdbd</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">tools</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown01">
+          <a class="dropdown-item" href="https://github.com/jamarchand/tbox-scan">tbox-scan</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">repository</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown01">
+          <a class="dropdown-item" href="https://github.com/jamarchand/tboxdb">site</a>
+          <a class="dropdown-item" href="https://github.com/mpiersonsmela/tbox">source code</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</ul>
+</div>
+</nav>
+<!-- Nav bar end-->
+    
+    
+    
+    
+    <div class="tablecontainer_container-fluid mt-4 pt-5">
+        <div class="pt-4">
+
+            <p class="text-center" style="font-size:30px; font-family:Helvetica Neue"><strong>Advanced Search</strong></p>
+        <div class="mb-3">
+            <p class="small mb-2 mt-3 container" align="justify" style="font-size: 16px">To use the advance search, simply select a search field from the dropdown menu, then enter desired search input on the corresponding form. Multiple fields can be searched simultaneously by adding more search rows '+'. To reset search fields, hit the 'Reset' button. To execute the search, hit the 'Advanced Search' button. Partial matches are allowed, though matches need to be exact. Multiple search queries are strict AND. Empty fields will be ignored in the search.
+          </p>
+        </div>
+    </div>
+
+    
+        
+    <main role="main" class="container">
+    <div class="pl-5 pr-5">
+    <div class="pt-4">
+        
+
+        
+        
+     <!-- Search table -->
+    <div id="search_visibility">
+    <div class="set-form">
+        <table id="search_table" class="table">
+            
+            <colgroup>
+               <col span="1" style="width: 20%;">
+               <col span="1" style="width: 80%;">
+            </colgroup>
+            
+    
+            <tr>
+                <td class="pt-2">
+                    <select class="custom-select" id="search_by_0">
+                        <option value="B0">TBID</option>
+                        <option value="B8">Sequence</option>
+                        <option value="B21">T-box class</option>
+                        <option value="B22">Regulation</option>
+                        <option value="B1">Host species</option>
+                        <option value="B2">Genomic accession</option>
+                        <option value="B3">Specifier Region</option>
+                        <option value="B4">Specifier</option>
+                        <option value="B5">T-box sequence</option>
+                        <option value="B20">Amino acid</option>
+                        <option value="B6">tRNA family</option>
+                        <option value="B7">Protein description</option>
+                        <option value="B13">Protein ID</option>
+                        <option value="B14">Host taxID</option>
+                        <option value="B15">Phylum</option>
+                        <option value="B16">Class</option>
+                        <option value="B17">Order</option>
+                        <option value="B18">Family</option>
+                        <option value="B19">Genus</option>
+                    </select>
+                </td>
+                
+                
+                
+                <td class="pt-2">
+                    <div class="pl-2">
+                        <input id="colsearch_0_0" placeholder="TBID (e.g. 0MHW7AY)" class="form-control"/>
+                        <input id="colsearch_1_0" placeholder="Host organism (e.g. Bacillus cereus)" class="form-control"/>
+                        <input id="colsearch_2_0" placeholder="Genomic accession of host organism (e.g. CP001176)" class="form-control" />
+                        <input id="colsearch_3_0" placeholder="Specifier region (e.g. AUCCA)" class="form-control" />
+                        <input id="colsearch_4_0" placeholder="Specifier (e.g. UCC)" class="form-control"/>
+                        <input id="colsearch_5_0" placeholder="T-box sequence (e.g. UGGC)" class="form-control"/>
+                        <input id="colsearch_6_0" placeholder="tRNA family (e.g. SER (GGA))" class="form-control"/>
+                        <input id="colsearch_7_0" placeholder="Downstream protein description (e.g. serine--tRNA ligase)" class="form-control"/>
+                        <input id="colsearch_8_0" placeholder="Sequence (e.g. CAGCTTATTCCCTGTCCTAGAAAGCCGGGGGTTGATGGAACCCGGTACACAATAAGCGAGCGAAATACACTCTGGAGTATCTCGGGTAATGCCGAGCGGAATCGCGAACGATAACTCGCTACGAGTGGCATGAATGGCCTGCGCAAGCGCTTGGGTCCATTGGTGCAAGATGGGTGGTAACACGGTTATTCAATCGTCCCTATGTCTACAATAGACAAGGGGCGATTTTTTGTTTTTTACCATAGGAGATTGAAGGAGTGTATGGCAGTGAATATTATCGACGAACTCGAATGGCGCGAAGCCGTCAATCA)" class="form-control"/>
+                        <input id="colsearch_13_0" placeholder="Downstream protein ID (e.g. ACK61623)" class="form-control"/>
+                        <input id="colsearch_14_0" placeholder="Host TaxID (e.g. 405532)" class="form-control"/>
+                        <input id="colsearch_15_0" placeholder="Phylum (e.g. Firmicutes)" class="form-control"/>
+                        <input id="colsearch_16_0" placeholder="Class (e.g. Bacilli)" class="form-control"/>
+                        <input id="colsearch_17_0" placeholder="Order (e.g. Bacillales)" class="form-control"/>
+                        <input id="colsearch_18_0" placeholder="Family (e.g. Bacillaceae)" class="form-control"/>
+                        <input id="colsearch_19_0" placeholder="Genus (e.g. Bacillus)" class="form-control"/>
+                        <!--<input id="colsearch_20_0" placeholder="tRNA sequence (e.g. GGTCCCGTGGTGTAGTGGTtAACATGCCTGCCTGTCACGCAGGAGAtCGCCGGTTCGACCCCGGTCGGGACCGCCA)" class="form-control"/>-->
+                        <input id="colsearch_20_0" placeholder="Amino acid (e.g. Leu)" class="form-control"/>
+                        <input id="colsearch_21_0" placeholder="T-box class (e.g. Class II)" class="form-control"/>
+                        <input id="colsearch_22_0" placeholder="T-box regulation (e.g. Transcriptional)" class="form-control"/>
+
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+    <div class="row">
+        <div class="pl-3">
+         <button class="btn btn-dark" id="search_2" aria-expanded="false" aria-controls="collapseExample" onclick="adv_search()">Advanced Search</button>
+          <button class="btn btn-dark" id="search_2" aria-expanded="false" aria-controls="collapseExample" onclick="add_fields()">+</button>
+          <button class="btn btn-warning" id="search_2" aria-expanded="false" aria-controls="collapseExample" onClick="window.location.reload();">Reset</button>
+
+         </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    
+    <div id="table_visibility" style="display:none">
+    <div id="proteinTable_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer" style="padding-left:8%; padding-right:8%; font-size:12px">
+    <table id="example" class="display compact"  data-page-length='15' style="width:100%">
+    </table>
+    <button class="btn btn-warning" id="search_2" aria-expanded="false" aria-controls="collapseExample" onClick="window.location.reload();">Reset</button>
+
+    </div>
+    <div>
+    
+    
+    </div>
+</div>
+    
+    <div class="tablecontainer_container-fluid mt-4 pb-5"></div>
+    
+
+    <script src="js/scripts.js"></script>
+    
+    
+    
+    
+    </body>
+</html>

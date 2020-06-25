@@ -4,7 +4,10 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <link rel="shortcut icon" href="favicon.ico">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
@@ -48,8 +51,13 @@
 <!-- Nav bar start-->
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top pt-3 mx-auto pr-5 pl-5" >
 <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+    <div class="container">
+    <a class="navbar-brand" href="https://tbdb.io/">
+             <img src="../logo/TBDB_logo_1_no_fill_white_white.png" height="40 px" alt="tbdb_logo">
+           </a>
+    </div>
   <ul class="navbar-nav ml-auto pr-5">
-      <a class="navbar-brand" href="about.html"><strong>T-box</strong> Database</a>
+      <a class="navbar-brand" href="https://tbdb.io/"><strong>T-box</strong> Database</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -58,18 +66,26 @@
       <li class="nav-item dropdown active">
         <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">about</a>
         <div class="dropdown-menu" aria-labelledby="dropdown01">
-          <a class="dropdown-item" href="about.html">about TBDB</a>
-          <a class="dropdown-item" href="tbox_background.html">tbox background</a>
-          <a class="dropdown-item" href="faq.html">faq</a>
-          <a class="dropdown-item" href="citing.html">how to cite</a>
-          <a class="dropdown-item" href="contact.html">contact</a>
+          <a class="dropdown-item" href="https://tbdb.io/about.html">about TBDB</a>
+          <a class="dropdown-item" href="https://tbdb.io/tbox_background.html">tbox background</a>
+          <a class="dropdown-item" href="https://tbdb.io/faq.html">faq</a>
+          <a class="dropdown-item" href="https://tbdb.io/citing.html">how to cite</a>
+          <a class="dropdown-item" href="https://tbdb.io/contact.html">contact</a>
         </div>
       </li>
       <li class="nav-item dropdown active">
         <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">database</a>
         <div class="dropdown-menu" aria-labelledby="dropdown01">
-          <a class="dropdown-item" href="tbdb.html">browse</a>
-          <a class="dropdown-item" href="database/tbdb.csv">download tdbd</a>
+          <a class="dropdown-item" href="https://tbdb.io/tbdb.html">browse</a>
+          <a class="dropdown-item" href="https://tbdb.io/advanced_search.html">advanced search</a>
+          <a class="dropdown-item" href="https://tbdb.io/specifier_use.html">specifier use table</a>
+          <a class="dropdown-item" href="https://tbdb.io/database/tbdb.csv">download tdbd</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">tools</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown01">
+          <a class="dropdown-item" href="https://github.com/jamarchand/tbox-scan">tbox-scan</a>
         </div>
       </li>
       <li class="nav-item dropdown active">
@@ -90,16 +106,16 @@
     
     <div class="tablecontainer_container-fluid mt-4 pt-5">
         <div class="pt-4">
-        <p class="text-center" style="font-size:32px">T-box Annotation Database</p>
+            <p class="text-center" style="font-size:30px; font-family:Helvetica Neue"><strong>T-box Annotation Database</strong></p>
         <div class="mb-3">
-            <p class="small mb-2 mt-3 container"  style="font-size: 18px">This database contains fold prediction, tRNA pairs, and thermodynamic calculations of putative T-box sequences found in nature. Click on individual T-boxes to access more information. To find a list of searchable parameters, look at our <a href=faq.html>faq</a> page.
+            <p class="small mb-2 mt-3 container" align="justify" style="font-size: 16px">This database contains T-box fold prediction, tRNA pairs from host organisms, information regarding T-box genetic context, and thermodynamic calculations of putative T-box sequences found in nature. Click on individual T-box IDs to access more information. To find a list of searchable parameters, look at our <a href=https://tbdb.io/faq.html>faq</a> page. For advanced search, please use the <a href="https://tbdb.io/advanced_search.html">advanced search</a> feature. The complete database is available to download as a single <a href="https://tbdb.io/database/tbdb.csv" >flat file</a>.
           </p>
         </div>
     </div>
 
     
     <div id="proteinTable_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer" style="padding-left:8%; padding-right:8%; font-size:12px">
-    <table id="example" class="display compact"  data-page-length='25' style="width:100%">
+    <table id="example" class="display compact"  data-page-length='15' style="width:100%">
     </table>
     
     
